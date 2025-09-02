@@ -1,8 +1,9 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using WordWheel.Views;
 
-namespace word_wheel;
+namespace WordWheel;
 
 public partial class App : Application
 {

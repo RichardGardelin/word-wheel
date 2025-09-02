@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using Avalonia.Controls;
 
-namespace word_wheel;
+namespace WordWheel.Views;
 
 public partial class MainWindow : Window
 {

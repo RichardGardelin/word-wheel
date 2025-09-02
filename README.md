@@ -1,2 +1,2 @@
-# word-wheel
-A Chinese word shuffler based on HSK vocabulary.
+# Word Wheel
+A Chinese word shuffler/randomizer based on HSK vocabulary.

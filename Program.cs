@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace word_wheel;
+namespace WordWheel;
 
 class Program
 {
