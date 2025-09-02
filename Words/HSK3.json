@@ -1,0 +1,2579 @@
+[
+    {
+        "character": "阿姨",
+        "pinyin": "āyí",
+        "pos": [
+            "Noun"
+        ],
+        "english": "aunt"
+    },
+    {
+        "character": "啊",
+        "pinyin": "a",
+        "pos": [
+            "Particle"
+        ],
+        "english": "ah"
+    },
+    {
+        "character": "矮",
+        "pinyin": "ǎi",
+        "pos": [
+            "Adjective",
+            "Verb"
+        ],
+        "english": "short"
+    },
+    {
+        "character": "爱好",
+        "pinyin": "àihào",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "hobby"
+    },
+    {
+        "character": "安静",
+        "pinyin": "ānjìng",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "Be quiet"
+    },
+    {
+        "character": "把",
+        "pinyin": "bǎ",
+        "pos": [
+            "Preposition",
+            "Measure word",
+            "Verb",
+            "Numeral"
+        ],
+        "english": "hold"
+    },
+    {
+        "character": "班",
+        "pinyin": "bān",
+        "pos": [
+            "Noun",
+            "Measure word",
+            "Pronoun"
+        ],
+        "english": "class"
+    },
+    {
+        "character": "搬",
+        "pinyin": "bān",
+        "pos": [
+            "Verb"
+        ],
+        "english": "move"
+    },
+    {
+        "character": "半",
+        "pinyin": "bàn",
+        "pos": [
+            "Numeral"
+        ],
+        "english": "half"
+    },
+    {
+        "character": "办法",
+        "pinyin": "bànfǎ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Way"
+    },
+    {
+        "character": "办公室",
+        "pinyin": "bàngōngshì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Office"
+    },
+    {
+        "character": "帮忙",
+        "pinyin": "bāngmáng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Help"
+    },
+    {
+        "character": "包",
+        "pinyin": "bāo",
+        "pos": [
+            "Verb",
+            "Noun",
+            "Measure word"
+        ],
+        "english": "package"
+    },
+    {
+        "character": "饱",
+        "pinyin": "bǎo",
+        "pos": [
+            "Adjective",
+            "Adverb",
+            "Verb"
+        ],
+        "english": "full"
+    },
+    {
+        "character": "北方",
+        "pinyin": "běifāng",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "north"
+    },
+    {
+        "character": "被",
+        "pinyin": "bèi",
+        "pos": [
+            "Preposition",
+            "Adverb"
+        ],
+        "english": "cover"
+    },
+    {
+        "character": "鼻子",
+        "pinyin": "bízi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "nose"
+    },
+    {
+        "character": "比较",
+        "pinyin": "bǐjiào",
+        "pos": [
+            "Adverb",
+            "Verb",
+            "Noun"
+        ],
+        "english": "compare"
+    },
+    {
+        "character": "比赛",
+        "pinyin": "bǐsài",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Match"
+    },
+    {
+        "character": "笔记本",
+        "pinyin": "bǐjìběn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "notebook"
+    },
+    {
+        "character": "必须",
+        "pinyin": "bìxū",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Must"
+    },
+    {
+        "character": "变化",
+        "pinyin": "biànhuà",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "change"
+    },
+    {
+        "character": "别人",
+        "pinyin": "biéren",
+        "pos": [
+            "Pronoun"
+        ],
+        "english": "Others"
+    },
+    {
+        "character": "冰箱",
+        "pinyin": "bīngxiāng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Refrigerator"
+    },
+    {
+        "character": "菜单",
+        "pinyin": "càidān",
+        "pos": [
+            "Noun"
+        ],
+        "english": "menu"
+    },
+    {
+        "character": "参加",
+        "pinyin": "cānjiā",
+        "pos": [
+            "Verb"
+        ],
+        "english": "participate in"
+    },
+    {
+        "character": "草",
+        "pinyin": "cǎo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "grass"
+    },
+    {
+        "character": "层",
+        "pinyin": "céng",
+        "pos": [
+            "Measure word",
+            "Verb",
+            "Noun"
+        ],
+        "english": "layer"
+    },
+    {
+        "character": "差",
+        "pinyin": "chà",
+        "pos": [
+            "Adjective",
+            "Verb"
+        ],
+        "english": "bad"
+    },
+    {
+        "character": "超市",
+        "pinyin": "chāoshì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Supermarket"
+    },
+    {
+        "character": "衬衫",
+        "pinyin": "chènshān",
+        "pos": [
+            "Noun"
+        ],
+        "english": "shirt"
+    },
+    {
+        "character": "成绩",
+        "pinyin": "chéngjì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "achievement"
+    },
+    {
+        "character": "城市",
+        "pinyin": "chéngshì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "City"
+    },
+    {
+        "character": "迟到",
+        "pinyin": "chídào",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Late"
+    },
+    {
+        "character": "除了",
+        "pinyin": "chúle",
+        "pos": [
+            "Preposition"
+        ],
+        "english": "except, besides"
+    },
+    {
+        "character": "船",
+        "pinyin": "chuán",
+        "pos": [
+            "Noun"
+        ],
+        "english": "ship"
+    },
+    {
+        "character": "春",
+        "pinyin": "chūn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "spring"
+    },
+    {
+        "character": "词典",
+        "pinyin": "cídiǎn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Dictionaries"
+    },
+    {
+        "character": "聪明",
+        "pinyin": "cōngming",
+        "pos": [
+            "Adjective",
+            "Noun"
+        ],
+        "english": "clever"
+    },
+    {
+        "character": "打扫",
+        "pinyin": "dǎsǎo",
+        "pos": [
+            "Verb"
+        ],
+        "english": "Clean"
+    },
+    {
+        "character": "打算",
+        "pinyin": "dǎsuàn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Plan"
+    },
+    {
+        "character": "带",
+        "pinyin": "dài",
+        "pos": [
+            "Verb"
+        ],
+        "english": "belt"
+    },
+    {
+        "character": "担心",
+        "pinyin": "dānxīn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Worry"
+    },
+    {
+        "character": "蛋糕",
+        "pinyin": "dàngāo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Cake"
+    },
+    {
+        "character": "当然",
+        "pinyin": "dāngrán",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Of course"
+    },
+    {
+        "character": "地",
+        "pinyin": "de",
+        "pos": [
+            "Noun"
+        ],
+        "english": ""
+    },
+    {
+        "character": "灯",
+        "pinyin": "dēng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "lamp"
+    },
+    {
+        "character": "地方",
+        "pinyin": "dìfang",
+        "pos": [
+            "Noun"
+        ],
+        "english": "local"
+    },
+    {
+        "character": "地铁",
+        "pinyin": "dìtiě",
+        "pos": [
+            "Noun"
+        ],
+        "english": "metro"
+    },
+    {
+        "character": "地图",
+        "pinyin": "dìtú",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Map"
+    },
+    {
+        "character": "电梯",
+        "pinyin": "diàntī",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Elevator."
+    },
+    {
+        "character": "电子邮件",
+        "pinyin": "diànzǐyóujiàn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "E-mail"
+    },
+    {
+        "character": "东",
+        "pinyin": "dōng",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "east"
+    },
+    {
+        "character": "冬",
+        "pinyin": "dōng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "winter"
+    },
+    {
+        "character": "动物",
+        "pinyin": "dòngwù",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Animal"
+    },
+    {
+        "character": "短",
+        "pinyin": "duǎn",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "short"
+    },
+    {
+        "character": "段",
+        "pinyin": "duàn",
+        "pos": [
+            "Measure word"
+        ],
+        "english": "paragraph"
+    },
+    {
+        "character": "锻炼",
+        "pinyin": "duànliàn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Physical exercise"
+    },
+    {
+        "character": "多么",
+        "pinyin": "duōme",
+        "pos": [
+            "Adverb",
+            "Adjective"
+        ],
+        "english": "such"
+    },
+    {
+        "character": "饿",
+        "pinyin": "è",
+        "pos": [
+            "Verb",
+            "Adjective"
+        ],
+        "english": "hungry"
+    },
+    {
+        "character": "不但而且",
+        "pinyin": "búdànérqiě",
+        "pos": [
+            "Conjunction"
+        ],
+        "english": "not only but also"
+    },
+    {
+        "character": "耳朵",
+        "pinyin": "ěrduo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Ears"
+    },
+    {
+        "character": "发",
+        "pinyin": "fā",
+        "pos": [
+            "Verb",
+            "Measure word"
+        ],
+        "english": "send out"
+    },
+    {
+        "character": "发烧",
+        "pinyin": "fāshāo",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Have a fever"
+    },
+    {
+        "character": "发现",
+        "pinyin": "fāxiàn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "find, discover"
+    },
+    {
+        "character": "方便",
+        "pinyin": "fāngbiàn",
+        "pos": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "english": "convenient"
+    },
+    {
+        "character": "放",
+        "pinyin": "fàng",
+        "pos": [
+            "Verb"
+        ],
+        "english": "discharge"
+    },
+    {
+        "character": "放心",
+        "pinyin": "fàngxīn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Don’t worry"
+    },
+    {
+        "character": "分",
+        "pinyin": "fēn",
+        "pos": [
+            "Time Word",
+            "Noun",
+            "Measure word",
+            "Verb",
+            "Adverb"
+        ],
+        "english": "minute"
+    },
+    {
+        "character": "附近",
+        "pinyin": "fùjìn",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "nearby"
+    },
+    {
+        "character": "复习",
+        "pinyin": "fùxí",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Review"
+    },
+    {
+        "character": "干净",
+        "pinyin": "gānjìng",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "clean"
+    },
+    {
+        "character": "感兴趣",
+        "pinyin": "gǎnxìngqù",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "be intretested in"
+    },
+    {
+        "character": "感冒",
+        "pinyin": "gǎnmào",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "get a cold"
+    },
+    {
+        "character": "刚才",
+        "pinyin": "gāngcái",
+        "pos": [
+            "Time Word",
+            "Noun"
+        ],
+        "english": "just"
+    },
+    {
+        "character": "个子",
+        "pinyin": "gèzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "height"
+    },
+    {
+        "character": "跟",
+        "pinyin": "gēn",
+        "pos": [
+            "Preposition",
+            "Verb"
+        ],
+        "english": "with"
+    },
+    {
+        "character": "根据",
+        "pinyin": "gēnjù",
+        "pos": [
+            "Preposition",
+            "Noun",
+            "Verb"
+        ],
+        "english": "according to"
+    },
+    {
+        "character": "更",
+        "pinyin": "gèng",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "more"
+    },
+    {
+        "character": "公斤",
+        "pinyin": "gōngjīn",
+        "pos": [
+            "Measure word"
+        ],
+        "english": "Kg."
+    },
+    {
+        "character": "公园",
+        "pinyin": "gōngyuán",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Park"
+    },
+    {
+        "character": "故事",
+        "pinyin": "gùshi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Story"
+    },
+    {
+        "character": "刮风",
+        "pinyin": "guāfēng",
+        "pos": [
+            "Verb"
+        ],
+        "english": "Windy"
+    },
+    {
+        "character": "关",
+        "pinyin": "guān",
+        "pos": [
+            "Verb",
+            "Noun",
+            "Pronoun"
+        ],
+        "english": "shut"
+    },
+    {
+        "character": "关系",
+        "pinyin": "guānxì",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "relationship"
+    },
+    {
+        "character": "关心",
+        "pinyin": "guānxīn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Care for"
+    },
+    {
+        "character": "关于",
+        "pinyin": "guānyú",
+        "pos": [
+            "Preposition"
+        ],
+        "english": "about"
+    },
+    {
+        "character": "国家",
+        "pinyin": "guójiā",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Country"
+    },
+    {
+        "character": "过去",
+        "pinyin": "guòqù",
+        "pos": [
+            "Verb",
+            "Time Word",
+            "Noun"
+        ],
+        "english": "Past times"
+    },
+    {
+        "character": "过",
+        "pinyin": "guò",
+        "pos": [
+            "Verb",
+            "Adverb"
+        ],
+        "english": "pass"
+    },
+    {
+        "character": "还是",
+        "pinyin": "háishì",
+        "pos": [
+            "Conjunction",
+            "Adverb",
+            "Verb"
+        ],
+        "english": "still"
+    },
+    {
+        "character": "害怕",
+        "pinyin": "hàipà",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Fear"
+    },
+    {
+        "character": "黑板",
+        "pinyin": "hēibǎn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "blackboard"
+    },
+    {
+        "character": "后来",
+        "pinyin": "hòulái",
+        "pos": [
+            "Time Word",
+            "Noun"
+        ],
+        "english": "later"
+    },
+    {
+        "character": "护照",
+        "pinyin": "hùzhào",
+        "pos": [
+            "Noun"
+        ],
+        "english": "passport"
+    },
+    {
+        "character": "花",
+        "pinyin": "huā",
+        "pos": [
+            "Verb",
+            "Noun",
+            "Adjective"
+        ],
+        "english": "spend"
+    },
+    {
+        "character": "花",
+        "pinyin": "huā",
+        "pos": [
+            "Verb",
+            "Noun",
+            "Adjective"
+        ],
+        "english": "flower"
+    },
+    {
+        "character": "画",
+        "pinyin": "huà",
+        "pos": [
+            "Noun",
+            "Verb",
+            "Measure word"
+        ],
+        "english": "painting"
+    },
+    {
+        "character": "坏",
+        "pinyin": "huài",
+        "pos": [
+            "Adjective",
+            "Verb"
+        ],
+        "english": "bad"
+    },
+    {
+        "character": "欢迎",
+        "pinyin": "huānyíng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Welcome"
+    },
+    {
+        "character": "还",
+        "pinyin": "huán",
+        "pos": [
+            "Adverb",
+            "Verb"
+        ],
+        "english": "Return"
+    },
+    {
+        "character": "环境",
+        "pinyin": "huánjìng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Environment"
+    },
+    {
+        "character": "换",
+        "pinyin": "huàn",
+        "pos": [
+            "Verb"
+        ],
+        "english": "change"
+    },
+    {
+        "character": "黄河",
+        "pinyin": "huánghé",
+        "pos": [
+            "Place name",
+            "Noun"
+        ],
+        "english": "Yellow River"
+    },
+    {
+        "character": "回答",
+        "pinyin": "huídá",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Answer"
+    },
+    {
+        "character": "会议",
+        "pinyin": "huìyì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Meeting"
+    },
+    {
+        "character": "或者",
+        "pinyin": "huòzhě",
+        "pos": [
+            "Conjunction",
+            "Adverb"
+        ],
+        "english": "perhaps"
+    },
+    {
+        "character": "几乎",
+        "pinyin": "jīhū",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "almost"
+    },
+    {
+        "character": "机会",
+        "pinyin": "jīhuì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Opportunity"
+    },
+    {
+        "character": "极",
+        "pinyin": "jí",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "extremely"
+    },
+    {
+        "character": "记得",
+        "pinyin": "jìde",
+        "pos": [
+            "Verb"
+        ],
+        "english": "remember"
+    },
+    {
+        "character": "季节",
+        "pinyin": "jìjié",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Season"
+    },
+    {
+        "character": "检查",
+        "pinyin": "jiǎnchá",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "inspect"
+    },
+    {
+        "character": "简单",
+        "pinyin": "jiǎndān",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "simple"
+    },
+    {
+        "character": "健康",
+        "pinyin": "jiànkāng",
+        "pos": [
+            "Adjective",
+            "Noun",
+            "Adverb"
+        ],
+        "english": "Healthy"
+    },
+    {
+        "character": "见面",
+        "pinyin": "jiànmiàn",
+        "pos": [
+            "Verb"
+        ],
+        "english": "meet"
+    },
+    {
+        "character": "讲",
+        "pinyin": "jiǎng",
+        "pos": [
+            "Verb"
+        ],
+        "english": "speak"
+    },
+    {
+        "character": "教",
+        "pinyin": "jiāo",
+        "pos": [
+            "Verb"
+        ],
+        "english": "teach"
+    },
+    {
+        "character": "角",
+        "pinyin": "jiǎo",
+        "pos": [
+            "Noun",
+            "Measure word"
+        ],
+        "english": "horn"
+    },
+    {
+        "character": "脚",
+        "pinyin": "jiǎo",
+        "pos": [
+            "Noun",
+            "Measure word"
+        ],
+        "english": "foot"
+    },
+    {
+        "character": "接",
+        "pinyin": "jiē",
+        "pos": [
+            "Verb"
+        ],
+        "english": "pick,get"
+    },
+    {
+        "character": "街道",
+        "pinyin": "jiēdào",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Street"
+    },
+    {
+        "character": "结婚",
+        "pinyin": "jiéhūn",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "marry"
+    },
+    {
+        "character": "结束",
+        "pinyin": "jiéshù",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "End"
+    },
+    {
+        "character": "节目",
+        "pinyin": "jiémù",
+        "pos": [
+            "Noun"
+        ],
+        "english": "program"
+    },
+    {
+        "character": "节日",
+        "pinyin": "jiérì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "festival"
+    },
+    {
+        "character": "解决",
+        "pinyin": "jiějué",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Solve"
+    },
+    {
+        "character": "借",
+        "pinyin": "jiè",
+        "pos": [
+            "Verb",
+            "Preposition"
+        ],
+        "english": "borrow"
+    },
+    {
+        "character": "经常",
+        "pinyin": "jīngcháng",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Often"
+    },
+    {
+        "character": "经过",
+        "pinyin": "jīngguò",
+        "pos": [
+            "Preposition",
+            "Verb",
+            "Noun"
+        ],
+        "english": "After, through"
+    },
+    {
+        "character": "经理",
+        "pinyin": "jīnglǐ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "manager"
+    },
+    {
+        "character": "久",
+        "pinyin": "jiǔ",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "long"
+    },
+    {
+        "character": "旧",
+        "pinyin": "jiù",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "old,used"
+    },
+    {
+        "character": "句子",
+        "pinyin": "jùzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "sentence"
+    },
+    {
+        "character": "决定",
+        "pinyin": "juédìng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Decision"
+    },
+    {
+        "character": "渴",
+        "pinyin": "kě",
+        "pos": [
+            "Adjective",
+            "Verb"
+        ],
+        "english": "thirsty"
+    },
+    {
+        "character": "可爱",
+        "pinyin": "kě’ài",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "Lovely"
+    },
+    {
+        "character": "刻",
+        "pinyin": "kè",
+        "pos": [
+            "Verb",
+            "Measure word",
+            "Time Word",
+            "Noun"
+        ],
+        "english": "moment"
+    },
+    {
+        "character": "客人",
+        "pinyin": "kèrén",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Guest"
+    },
+    {
+        "character": "空调",
+        "pinyin": "kōngtiáo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Air conditioner"
+    },
+    {
+        "character": "口",
+        "pinyin": "kǒu",
+        "pos": [
+            "Measure word",
+            "Noun"
+        ],
+        "english": "mouth"
+    },
+    {
+        "character": "哭",
+        "pinyin": "kū",
+        "pos": [
+            "Verb"
+        ],
+        "english": "cry"
+    },
+    {
+        "character": "裤子",
+        "pinyin": "kùzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "trousers"
+    },
+    {
+        "character": "筷子",
+        "pinyin": "kuàizi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "chopsticks"
+    },
+    {
+        "character": "蓝",
+        "pinyin": "lán",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "blue"
+    },
+    {
+        "character": "老",
+        "pinyin": "lǎo",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "old"
+    },
+    {
+        "character": "离开",
+        "pinyin": "líkāi",
+        "pos": [
+            "Verb"
+        ],
+        "english": "leave"
+    },
+    {
+        "character": "礼物",
+        "pinyin": "lǐwù",
+        "pos": [
+            "Noun"
+        ],
+        "english": "gift"
+    },
+    {
+        "character": "历史",
+        "pinyin": "lìshǐ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "History"
+    },
+    {
+        "character": "脸",
+        "pinyin": "liǎn",
+        "pos": [
+            "Noun",
+            "Measure word"
+        ],
+        "english": "face"
+    },
+    {
+        "character": "聊天",
+        "pinyin": "liáotiān",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "chat"
+    },
+    {
+        "character": "练习",
+        "pinyin": "liànxí",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Practice"
+    },
+    {
+        "character": "辆",
+        "pinyin": "liàng",
+        "pos": [
+            "Measure word"
+        ],
+        "english": "Car"
+    },
+    {
+        "character": "了解",
+        "pinyin": "liǎojiě",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "understand"
+    },
+    {
+        "character": "邻居",
+        "pinyin": "línjū",
+        "pos": [
+            "Noun"
+        ],
+        "english": "neighbor"
+    },
+    {
+        "character": "留学",
+        "pinyin": "liúxué",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Overseas Study"
+    },
+    {
+        "character": "楼",
+        "pinyin": "lóu",
+        "pos": [
+            "Noun"
+        ],
+        "english": "floor"
+    },
+    {
+        "character": "绿",
+        "pinyin": "lǜ",
+        "pos": [
+            "Adjective",
+            "Noun"
+        ],
+        "english": "green"
+    },
+    {
+        "character": "马",
+        "pinyin": "mǎ",
+        "pos": [
+            "Noun",
+            "Pronoun"
+        ],
+        "english": "Horse"
+    },
+    {
+        "character": "马上",
+        "pinyin": "mǎshàng",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Right off"
+    },
+    {
+        "character": "满意",
+        "pinyin": "mǎnyì",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Satisfied"
+    },
+    {
+        "character": "帽子",
+        "pinyin": "màozi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Hat"
+    },
+    {
+        "character": "米",
+        "pinyin": "mǐ",
+        "pos": [
+            "Noun",
+            "Measure word"
+        ],
+        "english": "rice"
+    },
+    {
+        "character": "面包",
+        "pinyin": "miànbāo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Bread"
+    },
+    {
+        "character": "明白",
+        "pinyin": "míngbai",
+        "pos": [
+            "Verb",
+            "Adjective",
+            "Noun"
+        ],
+        "english": "clear"
+    },
+    {
+        "character": "拿",
+        "pinyin": "ná",
+        "pos": [
+            "Verb"
+        ],
+        "english": "take"
+    },
+    {
+        "character": "奶奶",
+        "pinyin": "nǎinai",
+        "pos": [
+            "Noun"
+        ],
+        "english": "grandma"
+    },
+    {
+        "character": "南",
+        "pinyin": "nán",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "south"
+    },
+    {
+        "character": "难",
+        "pinyin": "nán",
+        "pos": [
+            "Adjective",
+            "Adverb",
+            "Verb"
+        ],
+        "english": "difficult"
+    },
+    {
+        "character": "难过",
+        "pinyin": "nánguò",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "sad"
+    },
+    {
+        "character": "年级",
+        "pinyin": "niánjí",
+        "pos": [
+            "Noun"
+        ],
+        "english": "grade"
+    },
+    {
+        "character": "年轻",
+        "pinyin": "niánqīng",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "Young"
+    },
+    {
+        "character": "鸟",
+        "pinyin": "niǎo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "bird"
+    },
+    {
+        "character": "努力",
+        "pinyin": "nǔlì",
+        "pos": [
+            "Adjective",
+            "Adverb",
+            "Noun"
+        ],
+        "english": "Strive"
+    },
+    {
+        "character": "爬山",
+        "pinyin": "páshān",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Mountain climbing"
+    },
+    {
+        "character": "盘子",
+        "pinyin": "pánzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "plate"
+    },
+    {
+        "character": "胖",
+        "pinyin": "pàng",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "fat"
+    },
+    {
+        "character": "啤酒",
+        "pinyin": "píjiǔ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Beer"
+    },
+    {
+        "character": "皮鞋",
+        "pinyin": "píxié",
+        "pos": [
+            "Noun"
+        ],
+        "english": "leather shoes"
+    },
+    {
+        "character": "瓶子",
+        "pinyin": "píngzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "bottle"
+    },
+    {
+        "character": "其实",
+        "pinyin": "qíshí",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "actually"
+    },
+    {
+        "character": "其他",
+        "pinyin": "qítā",
+        "pos": [
+            "Pronoun"
+        ],
+        "english": "Other"
+    },
+    {
+        "character": "骑",
+        "pinyin": "qí",
+        "pos": [
+            "Verb"
+        ],
+        "english": "ride"
+    },
+    {
+        "character": "奇怪",
+        "pinyin": "qíguài",
+        "pos": [
+            "Verb",
+            "Adjective"
+        ],
+        "english": "strange"
+    },
+    {
+        "character": "起来",
+        "pinyin": "qǐlái",
+        "pos": [
+            "Verb"
+        ],
+        "english": "get up"
+    },
+    {
+        "character": "起飞",
+        "pinyin": "qǐfēi",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "take off"
+    },
+    {
+        "character": "清楚",
+        "pinyin": "qīngchu",
+        "pos": [
+            "Adjective",
+            "Verb",
+            "Adverb"
+        ],
+        "english": "clear"
+    },
+    {
+        "character": "请假",
+        "pinyin": "qǐngjià",
+        "pos": [
+            "Verb"
+        ],
+        "english": "ask for leave"
+    },
+    {
+        "character": "秋",
+        "pinyin": "qiū",
+        "pos": [
+            "Noun"
+        ],
+        "english": "autumn"
+    },
+    {
+        "character": "裙子",
+        "pinyin": "qúnzi",
+        "pos": [
+            "Noun"
+        ],
+        "english": "skirt"
+    },
+    {
+        "character": "然后",
+        "pinyin": "ránhòu",
+        "pos": [
+            "Conjunction"
+        ],
+        "english": "Then"
+    },
+    {
+        "character": "热情",
+        "pinyin": "rèqíng",
+        "pos": [
+            "Adjective",
+            "Noun",
+            "Adverb"
+        ],
+        "english": "Enthusiasm"
+    },
+    {
+        "character": "认为",
+        "pinyin": "rènwéi",
+        "pos": [
+            "Verb"
+        ],
+        "english": "think"
+    },
+    {
+        "character": "认真",
+        "pinyin": "rènzhēn",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "earnest"
+    },
+    {
+        "character": "容易",
+        "pinyin": "róngyì",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "easily"
+    },
+    {
+        "character": "如果",
+        "pinyin": "rúguǒ",
+        "pos": [
+            "Conjunction",
+            "Verb"
+        ],
+        "english": "If"
+    },
+    {
+        "character": "伞",
+        "pinyin": "sǎn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "umbrella"
+    },
+    {
+        "character": "上网",
+        "pinyin": "shàngwǎng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Surf the Internet"
+    },
+    {
+        "character": "生气",
+        "pinyin": "shēngqì",
+        "pos": [
+            "Adjective",
+            "Noun",
+            "Verb"
+        ],
+        "english": "get angry"
+    },
+    {
+        "character": "声音",
+        "pinyin": "shēngyīn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "voice"
+    },
+    {
+        "character": "试",
+        "pinyin": "shì",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "try"
+    },
+    {
+        "character": "世界",
+        "pinyin": "shìjiè",
+        "pos": [
+            "Noun"
+        ],
+        "english": "world"
+    },
+    {
+        "character": "瘦",
+        "pinyin": "shòu",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "thin"
+    },
+    {
+        "character": "舒服",
+        "pinyin": "shūfu",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "comfortable"
+    },
+    {
+        "character": "叔叔",
+        "pinyin": "shūshu",
+        "pos": [
+            "Noun"
+        ],
+        "english": "uncle"
+    },
+    {
+        "character": "树",
+        "pinyin": "shù",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "tree"
+    },
+    {
+        "character": "数学",
+        "pinyin": "shùxué",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Mathematics"
+    },
+    {
+        "character": "刷牙",
+        "pinyin": "shuāyá",
+        "pos": [
+            "Verb"
+        ],
+        "english": "Brush one’s teeth"
+    },
+    {
+        "character": "双",
+        "pinyin": "shuāng",
+        "pos": [
+            "Numeral",
+            "Measure word"
+        ],
+        "english": "double, pair"
+    },
+    {
+        "character": "水平",
+        "pinyin": "shuǐpíng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "level"
+    },
+    {
+        "character": "司机",
+        "pinyin": "sījī",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Driver"
+    },
+    {
+        "character": "太阳",
+        "pinyin": "tàiyáng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "sun"
+    },
+    {
+        "character": "特别",
+        "pinyin": "tèbié",
+        "pos": [
+            "Adverb",
+            "Adjective"
+        ],
+        "english": "Especially"
+    },
+    {
+        "character": "疼",
+        "pinyin": "téng",
+        "pos": [
+            "Verb",
+            "Adjective"
+        ],
+        "english": "hurt"
+    },
+    {
+        "character": "提高",
+        "pinyin": "tígāo",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "increase"
+    },
+    {
+        "character": "体育",
+        "pinyin": "tǐyù",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Sports"
+    },
+    {
+        "character": "甜",
+        "pinyin": "tián",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "sweet"
+    },
+    {
+        "character": "条",
+        "pinyin": "tiáo",
+        "pos": [
+            "Measure word"
+        ],
+        "english": "strip"
+    },
+    {
+        "character": "同事",
+        "pinyin": "tóngshì",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Colleague"
+    },
+    {
+        "character": "同意",
+        "pinyin": "tóngyì",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Agree"
+    },
+    {
+        "character": "头发",
+        "pinyin": "tóufa",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Hair"
+    },
+    {
+        "character": "突然",
+        "pinyin": "tūrán",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "suddenly"
+    },
+    {
+        "character": "图书馆",
+        "pinyin": "túshūguǎn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Library"
+    },
+    {
+        "character": "腿",
+        "pinyin": "tuǐ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "leg"
+    },
+    {
+        "character": "完成",
+        "pinyin": "wánchéng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "complete"
+    },
+    {
+        "character": "碗",
+        "pinyin": "wǎn",
+        "pos": [
+            "Noun",
+            "Measure word"
+        ],
+        "english": "bowl"
+    },
+    {
+        "character": "万",
+        "pinyin": "wàn",
+        "pos": [
+            "Numeral",
+            "Time Word",
+            "Noun"
+        ],
+        "english": "ten thousand"
+    },
+    {
+        "character": "忘记",
+        "pinyin": "wàngjì",
+        "pos": [
+            "Verb"
+        ],
+        "english": "forget"
+    },
+    {
+        "character": "为",
+        "pinyin": "wèi",
+        "pos": [
+            "Preposition",
+            "Verb"
+        ],
+        "english": "for"
+    },
+    {
+        "character": "为了",
+        "pinyin": "wèile",
+        "pos": [
+            "Preposition",
+            "Verb"
+        ],
+        "english": "in order to"
+    },
+    {
+        "character": "位",
+        "pinyin": "wèi",
+        "pos": [
+            "Measure word"
+        ],
+        "english": "position"
+    },
+    {
+        "character": "文化",
+        "pinyin": "wénhuà",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Culture"
+    },
+    {
+        "character": "西",
+        "pinyin": "xī",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "west"
+    },
+    {
+        "character": "习惯",
+        "pinyin": "xíguàn",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "Habit"
+    },
+    {
+        "character": "洗手间",
+        "pinyin": "xǐshǒujiān",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Restroom"
+    },
+    {
+        "character": "洗澡",
+        "pinyin": "xǐzǎo",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Take a shower"
+    },
+    {
+        "character": "夏",
+        "pinyin": "xià",
+        "pos": [
+            "Noun",
+            "Pronoun"
+        ],
+        "english": "summer"
+    },
+    {
+        "character": "先",
+        "pinyin": "xiān",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "first"
+    },
+    {
+        "character": "香蕉",
+        "pinyin": "xiāngjiāo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Banana"
+    },
+    {
+        "character": "相信",
+        "pinyin": "xiāngxìn",
+        "pos": [
+            "Verb"
+        ],
+        "english": "believe"
+    },
+    {
+        "character": "向",
+        "pinyin": "xiàng",
+        "pos": [
+            "Preposition",
+            "Verb"
+        ],
+        "english": "towards"
+    },
+    {
+        "character": "像",
+        "pinyin": "xiàng",
+        "pos": [
+            "Verb",
+            "Preposition",
+            "Noun",
+            "Adverb"
+        ],
+        "english": "image"
+    },
+    {
+        "character": "小心",
+        "pinyin": "xiǎoxīn",
+        "pos": [
+            "Adjective",
+            "Verb",
+            "Adverb"
+        ],
+        "english": "watch out"
+    },
+    {
+        "character": "校长",
+        "pinyin": "xiàozhǎng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Principal"
+    },
+    {
+        "character": "新闻",
+        "pinyin": "xīnwén",
+        "pos": [
+            "Noun"
+        ],
+        "english": "news"
+    },
+    {
+        "character": "新鲜",
+        "pinyin": "xīnxiān",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "fresh"
+    },
+    {
+        "character": "信用卡",
+        "pinyin": "xìnyòngkǎ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Credit card"
+    },
+    {
+        "character": "行李箱",
+        "pinyin": "xínglixiāng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Trunk"
+    },
+    {
+        "character": "熊猫",
+        "pinyin": "xióngmāo",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Panda"
+    },
+    {
+        "character": "需要",
+        "pinyin": "xūyào",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Need"
+    },
+    {
+        "character": "选择",
+        "pinyin": "xuǎnzé",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Choice"
+    },
+    {
+        "character": "要求",
+        "pinyin": "yāoqiú",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Requirement"
+    },
+    {
+        "character": "爷爷",
+        "pinyin": "yéye",
+        "pos": [
+            "Noun"
+        ],
+        "english": "grandpa"
+    },
+    {
+        "character": "一定",
+        "pinyin": "yídìng",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Certain"
+    },
+    {
+        "character": "一共",
+        "pinyin": "yígòng",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "Altogether"
+    },
+    {
+        "character": "一会儿",
+        "pinyin": "yíhuìr",
+        "pos": [
+            "Numeral",
+            "Measure word"
+        ],
+        "english": "a while"
+    },
+    {
+        "character": "一样",
+        "pinyin": "yíyàng",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "equally"
+    },
+    {
+        "character": "以前",
+        "pinyin": "yǐqián",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "before"
+    },
+    {
+        "character": "一般",
+        "pinyin": "yìbān",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "commonly"
+    },
+    {
+        "character": "一边",
+        "pinyin": "yìbiān",
+        "pos": [
+            "Adverb",
+            "Directional",
+            "Noun"
+        ],
+        "english": "One side"
+    },
+    {
+        "character": "一直",
+        "pinyin": "yìzhí",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "always"
+    },
+    {
+        "character": "音乐",
+        "pinyin": "yīnyuè",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Music"
+    },
+    {
+        "character": "银行",
+        "pinyin": "yínháng",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Bank"
+    },
+    {
+        "character": "饮料",
+        "pinyin": "yǐnliào",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Drinks"
+    },
+    {
+        "character": "应该",
+        "pinyin": "yīnggāi",
+        "pos": [
+            "Verb"
+        ],
+        "english": "Should"
+    },
+    {
+        "character": "影响",
+        "pinyin": "yǐngxiǎng",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Influence"
+    },
+    {
+        "character": "用",
+        "pinyin": "yòng",
+        "pos": [
+            "Verb",
+            "Preposition"
+        ],
+        "english": "use"
+    },
+    {
+        "character": "游戏",
+        "pinyin": "yóuxì",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "Game"
+    },
+    {
+        "character": "有名",
+        "pinyin": "yǒumíng",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "Famous"
+    },
+    {
+        "character": "又",
+        "pinyin": "yòu",
+        "pos": [
+            "Adverb",
+            "Conjunction"
+        ],
+        "english": "again"
+    },
+    {
+        "character": "遇到",
+        "pinyin": "yùdào",
+        "pos": [
+            "Verb"
+        ],
+        "english": "encounter"
+    },
+    {
+        "character": "元",
+        "pinyin": "yuán",
+        "pos": [
+            "Measure word",
+            "Noun"
+        ],
+        "english": "element; yuan"
+    },
+    {
+        "character": "愿意",
+        "pinyin": "yuànyì",
+        "pos": [
+            "Verb"
+        ],
+        "english": "Be willing"
+    },
+    {
+        "character": "月亮",
+        "pinyin": "yuèliang",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Moon"
+    },
+    {
+        "character": "越",
+        "pinyin": "yuè",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "the more"
+    },
+    {
+        "character": "站",
+        "pinyin": "zhàn",
+        "pos": [
+            "Verb",
+            "Noun",
+            "Measure word"
+        ],
+        "english": "station"
+    },
+    {
+        "character": "张",
+        "pinyin": "zhāng",
+        "pos": [
+            "Measure word",
+            "Noun",
+            "Pronoun",
+            "Verb"
+        ],
+        "english": "Zhang (surname)"
+    },
+    {
+        "character": "长",
+        "pinyin": "zhǎng",
+        "pos": [
+            "Adjective",
+            "Verb",
+            "Adverb"
+        ],
+        "english": "grow"
+    },
+    {
+        "character": "着急",
+        "pinyin": "zháojí",
+        "pos": [
+            "Adjective",
+            "Adverb"
+        ],
+        "english": "Worry"
+    },
+    {
+        "character": "照顾",
+        "pinyin": "zhàogù",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "look after"
+    },
+    {
+        "character": "照片",
+        "pinyin": "zhàopiàn",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Photo"
+    },
+    {
+        "character": "照相机",
+        "pinyin": "zhàoxiàngjī",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Camera"
+    },
+    {
+        "character": "只",
+        "pinyin": "zhī",
+        "pos": [
+            "Adverb",
+            "Measure word"
+        ],
+        "english": "(measure word)"
+    },
+    {
+        "character": "只",
+        "pinyin": "zhǐ",
+        "pos": [
+            "Adverb",
+            "Measure word"
+        ],
+        "english": "only"
+    },
+    {
+        "character": "只有才",
+        "pinyin": "zhǐyǒucái",
+        "pos": [
+            "Conjunction"
+        ],
+        "english": "only if"
+    },
+    {
+        "character": "中文",
+        "pinyin": "zhōngwén",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Chinese"
+    },
+    {
+        "character": "中间",
+        "pinyin": "zhōngjiān",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "Middle"
+    },
+    {
+        "character": "终于",
+        "pinyin": "zhōngyú",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "finally"
+    },
+    {
+        "character": "种",
+        "pinyin": "zhǒng",
+        "pos": [
+            "Measure word",
+            "Verb"
+        ],
+        "english": "species"
+    },
+    {
+        "character": "重要",
+        "pinyin": "zhòngyào",
+        "pos": [
+            "Adjective"
+        ],
+        "english": "important"
+    },
+    {
+        "character": "周末",
+        "pinyin": "zhōumò",
+        "pos": [
+            "Time Word",
+            "Noun"
+        ],
+        "english": "Weekend"
+    },
+    {
+        "character": "主要",
+        "pinyin": "zhǔyào",
+        "pos": [
+            "Adverb"
+        ],
+        "english": "main"
+    },
+    {
+        "character": "注意",
+        "pinyin": "zhùyì",
+        "pos": [
+            "Verb",
+            "Noun"
+        ],
+        "english": "Be careful"
+    },
+    {
+        "character": "自己",
+        "pinyin": "zìjǐ",
+        "pos": [
+            "Pronoun",
+            "Verb"
+        ],
+        "english": "Own, self"
+    },
+    {
+        "character": "自行车",
+        "pinyin": "zìxíngchē",
+        "pos": [
+            "Noun"
+        ],
+        "english": "Bicycle"
+    },
+    {
+        "character": "总是",
+        "pinyin": "zǒngshì",
+        "pos": [
+            "Adverb",
+            "Verb"
+        ],
+        "english": "always"
+    },
+    {
+        "character": "嘴",
+        "pinyin": "zuǐ",
+        "pos": [
+            "Noun"
+        ],
+        "english": "mouth"
+    },
+    {
+        "character": "最后",
+        "pinyin": "zuìhòu",
+        "pos": [
+            "Directional",
+            "Noun"
+        ],
+        "english": "Last"
+    },
+    {
+        "character": "最近",
+        "pinyin": "zuìjìn",
+        "pos": [
+            "Time Word",
+            "Noun"
+        ],
+        "english": "lately"
+    },
+    {
+        "character": "作业",
+        "pinyin": "zuòyè",
+        "pos": [
+            "Noun",
+            "Verb"
+        ],
+        "english": "homework"
+    }
+]
