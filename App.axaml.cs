@@ -19,6 +19,7 @@ public partial class App : Application
     {
         _dataManager = new WordDataManager();
         _dataManager.EnsureUserWordFilesExist();
+        _dataManager.LoadAllUserWords();
 
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {

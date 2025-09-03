@@ -32,25 +32,20 @@ public class WordDataManager
         }
     }
 
-    public List<Word> LoadAllUserWords()
+    public void LoadAllUserWords()
     {
-        // TODO Add so each HSK file is using its own list in class field
-        List<Word> allWords = [];
+        // Load all user word lists and mark them as not dirty
         string userPath = GetUserWordFolderPath();
 
         foreach (var file in Directory.GetFiles(userPath, "*.json"))
         {
+            string fileName = Path.GetFileName(file);
             string json = File.ReadAllText(file);
+            List<Word> fileWords = JsonSerializer.Deserialize<List<Word>>(json) ?? [];
 
-            List<Word>? fileWords = JsonSerializer.Deserialize<List<Word>>(json);
-
-            if (fileWords != null)
-            {
-                allWords.AddRange(fileWords);
-            }
+            _wordLists[fileName] = fileWords;
+            _isDirty[fileName] = false;
         }
-
-        return allWords;
     }
 
     private static string GetUserWordFolderPath()
