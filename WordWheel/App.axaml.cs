@@ -9,6 +9,7 @@ namespace WordWheel;
 public partial class App : Application
 {
     private WordDataManager? _dataManager;
+    public WordDataManager DataManager => _dataManager!;
 
     public override void Initialize()
     {

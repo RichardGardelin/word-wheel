@@ -8,8 +8,8 @@ namespace WordWheel.Services;
 
 public class WordDataManager
 {
-    private Dictionary<string, List<Word>> _wordLists = [];
-    private Dictionary<string, bool> _isDirty = [];
+    private readonly Dictionary<string, List<Word>> _wordLists = [];
+    private readonly Dictionary<string, bool> _isDirty = [];
 
     public void EnsureUserWordFilesExist()
     {
