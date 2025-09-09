@@ -10,6 +10,16 @@ public class WordDataManager
 {
     private readonly Dictionary<string, List<Word>> _wordLists = [];
     private readonly Dictionary<string, bool> _isDirty = [];
+    private readonly List<Word> _filteredCache = [];
+
+    public Word GetRandomWordByPos(WordFilter filter)
+    {
+        _filteredCache.Clear();
+        _filteredCache.AddRange(FilterService.GetFilteredList(_wordLists, filter));
+
+        //Temp return, TODO
+        return _filteredCache[0];
+    }
 
     public void EnsureUserWordFilesExist()
     {
