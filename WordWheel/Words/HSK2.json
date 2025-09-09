@@ -45,7 +45,7 @@
         "pinyin": "líng",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "zero"
@@ -55,7 +55,7 @@
         "pinyin": "liǎng",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "two"
@@ -65,7 +65,7 @@
         "pinyin": "bǎi",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "hundred"
@@ -75,7 +75,7 @@
         "pinyin": "qiān",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "thousand"
@@ -375,7 +375,7 @@
         "character": "早上",
         "pinyin": "zǎoshàng",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "morning"
@@ -384,7 +384,7 @@
         "character": "晚上",
         "pinyin": "wǎnshàng",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "night"
@@ -410,7 +410,7 @@
         "character": "去年",
         "pinyin": "qùnián",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "last year"
@@ -419,7 +419,7 @@
         "character": "日",
         "pinyin": "rì",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun",
             "Measure word"
         ],

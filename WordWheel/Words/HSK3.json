@@ -582,7 +582,7 @@
         "character": "分",
         "pinyin": "fēn",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun",
             "Measure word",
             "Verb",
@@ -638,7 +638,7 @@
         "character": "刚才",
         "pinyin": "gāngcái",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "just"
@@ -759,7 +759,7 @@
         "pinyin": "guòqù",
         "pos": [
             "Verb",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "Past times"
@@ -804,7 +804,7 @@
         "character": "后来",
         "pinyin": "hòulái",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "later"
@@ -1186,7 +1186,7 @@
         "pos": [
             "Verb",
             "Measure word",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "moment"
@@ -1941,7 +1941,7 @@
         "pinyin": "wàn",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "ten thousand"
@@ -2493,7 +2493,7 @@
         "character": "周末",
         "pinyin": "zhōumò",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "Weekend"
@@ -2562,7 +2562,7 @@
         "character": "最近",
         "pinyin": "zuìjìn",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "lately"

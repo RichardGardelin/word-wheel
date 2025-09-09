@@ -128,7 +128,7 @@
         "pos": [
             "Numeral",
             "Adverb",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "one"
@@ -138,7 +138,7 @@
         "pinyin": "èr",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "two"
@@ -148,7 +148,7 @@
         "pinyin": "sān",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "three"
@@ -158,7 +158,7 @@
         "pinyin": "sì",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "four"
@@ -168,7 +168,7 @@
         "pinyin": "wǔ",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "five"
@@ -178,7 +178,7 @@
         "pinyin": "liù",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "six"
@@ -188,7 +188,7 @@
         "pinyin": "qī",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "seven"
@@ -198,7 +198,7 @@
         "pinyin": "bā",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "eight"
@@ -208,7 +208,7 @@
         "pinyin": "jiǔ",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "nine"
@@ -218,7 +218,7 @@
         "pinyin": "shí",
         "pos": [
             "Numeral",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "ten"
@@ -236,7 +236,7 @@
         "pinyin": "suì",
         "pos": [
             "Measure word",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "(for age)"
@@ -457,7 +457,7 @@
             "Directional",
             "Noun",
             "Measure word",
-            "Time Word"
+            "Time word"
         ],
         "english": "down"
     },
@@ -493,7 +493,7 @@
         "character": "今天",
         "pinyin": "jīntiān",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "today"
@@ -502,7 +502,7 @@
         "character": "明天",
         "pinyin": "míngtiān",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "tomorrow"
@@ -511,7 +511,7 @@
         "character": "昨天",
         "pinyin": "zuótiān",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "yesterday"
@@ -520,7 +520,7 @@
         "character": "上午",
         "pinyin": "shàngwǔ",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "morning"
@@ -529,7 +529,7 @@
         "character": "中午",
         "pinyin": "zhōngwǔ",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "noon"
@@ -538,7 +538,7 @@
         "character": "下午",
         "pinyin": "xiàwǔ",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "afternoon"
@@ -548,7 +548,7 @@
         "pinyin": "nián",
         "pos": [
             "Measure word",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "year"
@@ -558,7 +558,7 @@
         "pinyin": "yuè",
         "pos": [
             "Noun",
-            "Time Word"
+            "Time word"
         ],
         "english": "month"
     },
@@ -583,7 +583,7 @@
         "pinyin": "diǎn",
         "pos": [
             "Measure word",
-            "Time Word",
+            "Time word",
             "Noun",
             "Verb"
         ],
@@ -594,7 +594,7 @@
         "pinyin": "fēnzhōng",
         "pos": [
             "Measure word",
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "minute"
@@ -603,7 +603,7 @@
         "character": "现在",
         "pinyin": "xiànzài",
         "pos": [
-            "Time Word",
+            "Time word",
             "Noun"
         ],
         "english": "now"
