@@ -21,10 +21,9 @@ public static class FilterService
         }
 
         // If no POS selected, return all words from selected books
-        if (filter.Pos.Count > 0)
+        if (filter.PosCounts.Count > 0)
         {
-            // Using C# 12 collection expression to convert to List
-            filteredList = [.. filteredList.Where(word => word.Pos.Any(p => filter.Pos.Contains(p)))];
+            filteredList = [.. filteredList.Where(word => word.Pos.Any(p => filter.PosCounts.ContainsKey(p)))];
         }
 
         return filteredList;

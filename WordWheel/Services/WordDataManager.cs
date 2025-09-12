@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using WordWheel.Models;
+using WordWheel.Utils;
 
 namespace WordWheel.Services;
 
@@ -11,14 +12,19 @@ public class WordDataManager
     private readonly Dictionary<string, List<Word>> _wordLists = [];
     private readonly Dictionary<string, bool> _isDirty = [];
     private readonly List<Word> _filteredCache = [];
+    private readonly RandomizerService _randomizerService = new();
+    private WordFilter? _lastUsedFilter;
 
-    public Word GetRandomWordByPos(WordFilter filter)
+    public List<RandomizedWord> GetRandomWords(WordFilter filter)
     {
-        _filteredCache.Clear();
-        _filteredCache.AddRange(FilterService.GetFilteredList(_wordLists, filter));
+        if (_lastUsedFilter == null || !FilterUtils.FiltersAreEqual(_lastUsedFilter, filter))
+        {
+            _filteredCache.Clear();
+            _lastUsedFilter = FilterUtils.CloneFilter(filter);
+            _filteredCache.AddRange(FilterService.GetFilteredList(_wordLists, filter));
+        }
 
-        //Temp return, TODO
-        return _filteredCache[0];
+        return _randomizerService.PickWordsByPOS(_filteredCache, filter); ;
     }
 
     public void EnsureUserWordFilesExist()
