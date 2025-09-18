@@ -1,8 +1,0 @@
-<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="WordWheel.Views.MainMenuView">
-  <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
-    <Button Name="ProfileButton" Content="Profile" Width="150" Height="40"/>
-    <Button Name="StudyButton" Content="Study" Width="150" Height="40"/>
-  </StackPanel>
-</UserControl>

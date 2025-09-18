@@ -11,6 +11,6 @@ public partial class ProfileView : UserControl
     public ProfileView()
     {
         InitializeComponent();
-        BackButton.Click += (s, e) => BackClicked?.Invoke(this, EventArgs.Empty);
+        StudyButton.Click += (s, e) => BackClicked?.Invoke(this, EventArgs.Empty);
     }
 }

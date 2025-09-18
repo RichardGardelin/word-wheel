@@ -5,33 +5,23 @@ namespace WordWheel;
 
 public partial class MainWindow : Window
 {
-    private MainMenuView _mainMenuView;
-    private ProfileView _profileView;
     private StudyView _studyView;
+    private ProfileView _profileView;
 
     public MainWindow()
     {
         InitializeComponent();
 
         // Initialize views
-        _mainMenuView = new MainMenuView();
-        _profileView = new ProfileView();
         _studyView = new StudyView();
+        _profileView = new ProfileView();
 
         // Wire up events
-        _mainMenuView.ProfileClicked += (_, _) => ShowProfileView();
-        _mainMenuView.StudyClicked += (_, _) => ShowStudyView();
-
-        _profileView.BackClicked += (_, _) => ShowMainMenu();
-        _studyView.BackClicked += (_, _) => ShowMainMenu();
+        _profileView.BackClicked += (_, _) => ShowStudyView();
+        _studyView.BackClicked += (_, _) => ShowProfileView();
 
         // Show main menu on start
-        ShowMainMenu();
-    }
-
-    private void ShowMainMenu()
-    {
-        MainContent.Content = _mainMenuView;
+        ShowStudyView();
     }
 
     private void ShowProfileView()
