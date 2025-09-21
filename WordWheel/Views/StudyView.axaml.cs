@@ -1,16 +1,30 @@
+using System;
+using System.Diagnostics;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using System;
+using WordWheel.Services;
+using WordWheel.ViewModels;
 
 namespace WordWheel.Views;
 
 public partial class StudyView : UserControl
 {
-    public event EventHandler? BackClicked;
+    private readonly WordDataManager _wordDataManager;
 
     public StudyView()
     {
         InitializeComponent();
-        ProfileButton.Click += (s, e) => BackClicked?.Invoke(this, EventArgs.Empty);
+        _wordDataManager = ((App)Application.Current!).DataManager;
+
+        DataContext = new StudyViewModel(_wordDataManager);
+    }
+
+    private void RandomizeButton_Click(object? sender, RoutedEventArgs e)
+    {
+        if (DataContext is StudyViewModel vm)
+        {
+            vm.RandomizeWords();
+        }
     }
 }

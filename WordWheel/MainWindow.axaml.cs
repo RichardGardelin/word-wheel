@@ -16,10 +16,6 @@ public partial class MainWindow : Window
         _studyView = new StudyView();
         _profileView = new ProfileView();
 
-        // Wire up events
-        _profileView.BackClicked += (_, _) => ShowStudyView();
-        _studyView.BackClicked += (_, _) => ShowProfileView();
-
         // Show main menu on start
         ShowStudyView();
     }
