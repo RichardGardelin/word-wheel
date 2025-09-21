@@ -2,8 +2,10 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
+    <UseAppHost>true</UseAppHost>
+    <PublishAot>false</PublishAot>
     <Nullable>enable</Nullable>
-    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <BuiltInComInteropSupport>false</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
     <RootNamespace>WordWheel</RootNamespace>
@@ -24,7 +26,12 @@
   <ItemGroup>
     <Content Include="Words\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
+
+  <Target Name="CopyLargeJson" AfterTargets="Publish">
+    <Copy SourceFiles="Words\HSK6.json" DestinationFolder="$(PublishDir)Words\" SkipUnchangedFiles="false" />
+  </Target>
 
 </Project>
