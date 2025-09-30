@@ -5,7 +5,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "I, me"
+        "english": "I, me",
+        "lesson": 3
     },
     {
         "character": "我们",
@@ -13,7 +14,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "we, us (pl.)"
+        "english": "we, us (pl.)",
+        "lesson": 11
     },
     {
         "character": "你",
@@ -21,7 +23,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "you"
+        "english": "you",
+        "lesson": 1
     },
     {
         "character": "他",
@@ -29,7 +32,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "he, him"
+        "english": "he, him",
+        "lesson": 4
     },
     {
         "character": "她",
@@ -37,7 +41,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "she, her"
+        "english": "she, her",
+        "lesson": 4
     },
     {
         "character": "这",
@@ -45,7 +50,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "this"
+        "english": "this",
+        "lesson": 8
     },
     {
         "character": "那",
@@ -54,7 +60,8 @@
             "Pronoun",
             "Conjunction"
         ],
-        "english": "that"
+        "english": "that",
+        "lesson": 8
     },
     {
         "character": "哪",
@@ -63,7 +70,8 @@
             "Pronoun",
             "Particle"
         ],
-        "english": "which"
+        "english": "which",
+        "lesson": 4
     },
     {
         "character": "哪儿",
@@ -71,7 +79,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "where"
+        "english": "where",
+        "lesson": 9
     },
     {
         "character": "谁",
@@ -79,7 +88,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "who"
+        "english": "who",
+        "lesson": 4
     },
     {
         "character": "什么",
@@ -87,7 +97,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "what, why"
+        "english": "what, why",
+        "lesson": 3
     },
     {
         "character": "多少",
@@ -95,7 +106,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "how many, how much"
+        "english": "how many, how much",
+        "lesson": 8
     },
     {
         "character": "几",
@@ -104,7 +116,8 @@
             "Numeral",
             "Adverb"
         ],
-        "english": "a few, how many"
+        "english": "a few, how many",
+        "lesson": 5
     },
     {
         "character": "怎么",
@@ -112,7 +125,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "how"
+        "english": "how",
+        "lesson": 6
     },
     {
         "character": "怎么样",
@@ -120,7 +134,8 @@
         "pos": [
             "Pronoun"
         ],
-        "english": "how about"
+        "english": "how about",
+        "lesson": 12
     },
     {
         "character": "一",
@@ -131,7 +146,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "one"
+        "english": "one",
+        "lesson": 1
     },
     {
         "character": "二",
@@ -141,7 +157,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "two"
+        "english": "two",
+        "lesson": 1
     },
     {
         "character": "三",
@@ -151,7 +168,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "three"
+        "english": "three",
+        "lesson": 1
     },
     {
         "character": "四",
@@ -161,7 +179,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "four"
+        "english": "four",
+        "lesson": 1
     },
     {
         "character": "五",
@@ -171,7 +190,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "five"
+        "english": "five",
+        "lesson": 1
     },
     {
         "character": "六",
@@ -181,7 +201,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "six"
+        "english": "six",
+        "lesson": 1
     },
     {
         "character": "七",
@@ -191,7 +212,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "seven"
+        "english": "seven",
+        "lesson": 1
     },
     {
         "character": "八",
@@ -201,7 +223,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "eight"
+        "english": "eight",
+        "lesson": 1
     },
     {
         "character": "九",
@@ -211,7 +234,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "nine"
+        "english": "nine",
+        "lesson": 1
     },
     {
         "character": "十",
@@ -221,7 +245,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "ten"
+        "english": "ten",
+        "lesson": 1
     },
     {
         "character": "个",
@@ -229,7 +254,8 @@
         "pos": [
             "Measure word"
         ],
-        "english": "(for normal objects)"
+        "english": "(for normal objects)",
+        "lesson": 8
     },
     {
         "character": "岁",
@@ -239,7 +265,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "(for age)"
+        "english": "(for age)",
+        "lesson": 5
     },
     {
         "character": "本",
@@ -250,7 +277,8 @@
             "Adverb",
             "Noun"
         ],
-        "english": "(for books)"
+        "english": "(for books)",
+        "lesson": 10
     },
     {
         "character": "些",
@@ -258,7 +286,8 @@
         "pos": [
             "Measure word"
         ],
-        "english": "some"
+        "english": "some",
+        "lesson": 12
     },
     {
         "character": "块",
@@ -266,7 +295,8 @@
         "pos": [
             "Measure word"
         ],
-        "english": "piece, chunk"
+        "english": "piece, chunk",
+        "lesson": 8
     },
     {
         "character": "不",
@@ -274,7 +304,8 @@
         "pos": [
             "Adverb"
         ],
-        "english": "no"
+        "english": "no",
+        "lesson": 2
     },
     {
         "character": "没",
@@ -283,7 +314,8 @@
             "Adverb",
             "Verb"
         ],
-        "english": "no"
+        "english": "no",
+        "lesson": 10
     },
     {
         "character": "很",
@@ -291,7 +323,8 @@
         "pos": [
             "Adverb"
         ],
-        "english": "quite, very"
+        "english": "quite, very",
+        "lesson": 6
     },
     {
         "character": "太",
@@ -299,7 +332,8 @@
         "pos": [
             "Adverb"
         ],
-        "english": "too"
+        "english": "too",
+        "lesson": 12
     },
     {
         "character": "都",
@@ -307,7 +341,8 @@
         "pos": [
             "Adverb"
         ],
-        "english": "all"
+        "english": "all",
+        "lesson": 14
     },
     {
         "character": "一点儿",
@@ -315,7 +350,8 @@
         "pos": [
             "Adverb"
         ],
-        "english": "a little bit"
+        "english": "a little bit",
+        "lesson": 14
     },
     {
         "character": "和",
@@ -327,7 +363,8 @@
             "Measure word",
             "Noun"
         ],
-        "english": "and"
+        "english": "and",
+        "lesson": 10
     },
     {
         "character": "在",
@@ -337,7 +374,8 @@
             "Verb",
             "Adverb"
         ],
-        "english": "in, at"
+        "english": "in, at",
+        "lesson": 9
     },
     {
         "character": "的",
@@ -345,7 +383,8 @@
         "pos": [
             "Noun"
         ],
-        "english": ""
+        "english": "",
+        "lesson": 4
     },
     {
         "character": "了",
@@ -354,7 +393,8 @@
             "Particle",
             "Verb"
         ],
-        "english": ""
+        "english": "",
+        "lesson": 5
     },
     {
         "character": "吗",
@@ -362,7 +402,8 @@
         "pos": [
             "Particle"
         ],
-        "english": ""
+        "english": "",
+        "lesson": 3
     },
     {
         "character": "呢",
@@ -370,7 +411,8 @@
         "pos": [
             "Particle"
         ],
-        "english": ""
+        "english": "",
+        "lesson": 4
     },
     {
         "character": "喂",
@@ -378,7 +420,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "hello"
+        "english": "hello",
+        "lesson": 13
     },
     {
         "character": "家",
@@ -387,7 +430,8 @@
             "Noun",
             "Measure word"
         ],
-        "english": "home"
+        "english": "home",
+        "lesson": 5
     },
     {
         "character": "学校",
@@ -395,7 +439,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "school"
+        "english": "school",
+        "lesson": 7
     },
     {
         "character": "饭店",
@@ -403,7 +448,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "restaurant"
+        "english": "restaurant",
+        "lesson": 15
     },
     {
         "character": "商店",
@@ -411,7 +457,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "store"
+        "english": "store",
+        "lesson": 8
     },
     {
         "character": "医院",
@@ -419,7 +466,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "hospital"
+        "english": "hospital",
+        "lesson": 9
     },
     {
         "character": "中国",
@@ -428,7 +476,8 @@
             "Place name",
             "Noun"
         ],
-        "english": "China"
+        "english": "China",
+        "lesson": 3
     },
     {
         "character": "北京",
@@ -437,7 +486,8 @@
             "Place name",
             "Noun"
         ],
-        "english": "Beijing"
+        "english": "Beijing",
+        "lesson": 11
     },
     {
         "character": "上",
@@ -447,7 +497,8 @@
             "Noun",
             "Verb"
         ],
-        "english": "up"
+        "english": "up",
+        "lesson": 10
     },
     {
         "character": "下",
@@ -459,7 +510,8 @@
             "Measure word",
             "Time word"
         ],
-        "english": "down"
+        "english": "down",
+        "lesson": 9
     },
     {
         "character": "前面",
@@ -468,7 +520,8 @@
             "Directional",
             "Noun"
         ],
-        "english": "front"
+        "english": "front",
+        "lesson": 10
     },
     {
         "character": "后面",
@@ -477,7 +530,8 @@
             "Directional",
             "Noun"
         ],
-        "english": "behind"
+        "english": "behind",
+        "lesson": 10
     },
     {
         "character": "里",
@@ -487,7 +541,8 @@
             "Noun",
             "Measure word"
         ],
-        "english": "inside"
+        "english": "inside",
+        "lesson": 10
     },
     {
         "character": "今天",
@@ -496,7 +551,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "today"
+        "english": "today",
+        "lesson": 7
     },
     {
         "character": "明天",
@@ -505,7 +561,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "tomorrow"
+        "english": "tomorrow",
+        "lesson": 7
     },
     {
         "character": "昨天",
@@ -514,7 +571,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "yesterday"
+        "english": "yesterday",
+        "lesson": 7
     },
     {
         "character": "上午",
@@ -523,7 +581,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "morning"
+        "english": "morning",
+        "lesson": 13
     },
     {
         "character": "中午",
@@ -532,7 +591,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "noon"
+        "english": "noon",
+        "lesson": 11
     },
     {
         "character": "下午",
@@ -541,7 +601,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "afternoon"
+        "english": "afternoon",
+        "lesson": 8
     },
     {
         "character": "年",
@@ -551,7 +612,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "year"
+        "english": "year",
+        "lesson": 15
     },
     {
         "character": "月",
@@ -560,7 +622,8 @@
             "Noun",
             "Time word"
         ],
-        "english": "month"
+        "english": "month",
+        "lesson": 7
     },
     {
         "character": "号",
@@ -568,7 +631,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "number/date"
+        "english": "number/date",
+        "lesson": 7
     },
     {
         "character": "星期",
@@ -576,7 +640,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "week"
+        "english": "week",
+        "lesson": 7
     },
     {
         "character": "点",
@@ -587,7 +652,8 @@
             "Noun",
             "Verb"
         ],
-        "english": "o’clock"
+        "english": "o’clock",
+        "lesson": 11
     },
     {
         "character": "分钟",
@@ -597,7 +663,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "minute"
+        "english": "minute",
+        "lesson": 14
     },
     {
         "character": "现在",
@@ -606,7 +673,8 @@
             "Time word",
             "Noun"
         ],
-        "english": "now"
+        "english": "now",
+        "lesson": 11
     },
     {
         "character": "时候",
@@ -614,7 +682,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "time"
+        "english": "time",
+        "lesson": 11
     },
     {
         "character": "爸爸",
@@ -622,7 +691,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "father"
+        "english": "father",
+        "lesson": 9
     },
     {
         "character": "妈妈",
@@ -630,7 +700,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "mother"
+        "english": "mother",
+        "lesson": 6
     },
     {
         "character": "儿子",
@@ -638,7 +709,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "son"
+        "english": "son",
+        "lesson": 9
     },
     {
         "character": "女儿",
@@ -646,7 +718,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "daughter"
+        "english": "daughter",
+        "lesson": 5
     },
     {
         "character": "老师",
@@ -654,7 +727,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "teacher"
+        "english": "teacher",
+        "lesson": 3
     },
     {
         "character": "学生",
@@ -662,7 +736,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "student"
+        "english": "student",
+        "lesson": 3
     },
     {
         "character": "同学",
@@ -670,7 +745,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "classmate"
+        "english": "classmate",
+        "lesson": 4
     },
     {
         "character": "朋友",
@@ -678,7 +754,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "friend"
+        "english": "friend",
+        "lesson": 4
     },
     {
         "character": "医生",
@@ -686,7 +763,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "doctor"
+        "english": "doctor",
+        "lesson": 9
     },
     {
         "character": "先生",
@@ -694,7 +772,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "sir"
+        "english": "sir",
+        "lesson": 14
     },
     {
         "character": "小姐",
@@ -702,7 +781,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "Miss"
+        "english": "Miss",
+        "lesson": 12
     },
     {
         "character": "衣服",
@@ -710,7 +790,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "cloth"
+        "english": "cloth",
+        "lesson": 14
     },
     {
         "character": "水",
@@ -718,7 +799,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "water"
+        "english": "water",
+        "lesson": 12
     },
     {
         "character": "菜",
@@ -726,7 +808,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "dish"
+        "english": "dish",
+        "lesson": 6
     },
     {
         "character": "米饭",
@@ -734,7 +817,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "rice"
+        "english": "rice",
+        "lesson": 8
     },
     {
         "character": "水果",
@@ -742,7 +826,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "fruit"
+        "english": "fruit",
+        "lesson": 12
     },
     {
         "character": "苹果",
@@ -750,7 +835,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "apple"
+        "english": "apple",
+        "lesson": 14
     },
     {
         "character": "茶",
@@ -758,7 +844,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "tea"
+        "english": "tea",
+        "lesson": 8
     },
     {
         "character": "杯子",
@@ -766,7 +853,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "cup"
+        "english": "cup",
+        "lesson": 8
     },
     {
         "character": "钱",
@@ -775,7 +863,8 @@
             "Noun",
             "Pronoun"
         ],
-        "english": "money"
+        "english": "money",
+        "lesson": 8
     },
     {
         "character": "飞机",
@@ -783,7 +872,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "airplane"
+        "english": "airplane",
+        "lesson": 15
     },
     {
         "character": "出租车",
@@ -791,7 +881,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "taxi"
+        "english": "taxi",
+        "lesson": 15
     },
     {
         "character": "电视",
@@ -799,7 +890,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "television"
+        "english": "television",
+        "lesson": 13
     },
     {
         "character": "电脑",
@@ -807,7 +899,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "computer"
+        "english": "computer",
+        "lesson": 10
     },
     {
         "character": "电影",
@@ -815,7 +908,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "movie"
+        "english": "movie",
+        "lesson": 11
     },
     {
         "character": "天气",
@@ -823,7 +917,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "weather"
+        "english": "weather",
+        "lesson": 12
     },
     {
         "character": "猫",
@@ -832,7 +927,8 @@
             "Noun",
             "Verb"
         ],
-        "english": "cat"
+        "english": "cat",
+        "lesson": 9
     },
     {
         "character": "狗",
@@ -840,7 +936,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "dog"
+        "english": "dog",
+        "lesson": 9
     },
     {
         "character": "东西",
@@ -850,7 +947,8 @@
             "Directional",
             "Pronoun"
         ],
-        "english": "thing"
+        "english": "thing",
+        "lesson": 14
     },
     {
         "character": "人",
@@ -858,7 +956,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "person"
+        "english": "person",
+        "lesson": 3
     },
     {
         "character": "名字",
@@ -866,7 +965,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "name"
+        "english": "name",
+        "lesson": 3
     },
     {
         "character": "书",
@@ -874,7 +974,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "book"
+        "english": "book",
+        "lesson": 7
     },
     {
         "character": "汉语",
@@ -882,7 +983,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "mandarin Chinese"
+        "english": "mandarin Chinese",
+        "lesson": 4
     },
     {
         "character": "字",
@@ -890,7 +992,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "character"
+        "english": "character",
+        "lesson": 6
     },
     {
         "character": "桌子",
@@ -898,7 +1001,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "desk"
+        "english": "desk",
+        "lesson": 10
     },
     {
         "character": "椅子",
@@ -906,7 +1010,8 @@
         "pos": [
             "Noun"
         ],
-        "english": "chair"
+        "english": "chair",
+        "lesson": 9
     },
     {
         "character": "谢谢",
@@ -914,7 +1019,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "thank"
+        "english": "thank",
+        "lesson": 2
     },
     {
         "character": "再见",
@@ -922,7 +1028,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "good-bye"
+        "english": "good-bye",
+        "lesson": 2
     },
     {
         "character": "请",
@@ -930,7 +1037,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "please"
+        "english": "please",
+        "lesson": 7
     },
     {
         "character": "对不起",
@@ -938,7 +1046,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "sorry"
+        "english": "sorry",
+        "lesson": 1
     },
     {
         "character": "没关系",
@@ -946,7 +1055,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "It doesn’t matter"
+        "english": "It doesn’t matter",
+        "lesson": 1
     },
     {
         "character": "是",
@@ -954,7 +1064,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "be (am, is, are)"
+        "english": "be (am, is, are)",
+        "lesson": 3
     },
     {
         "character": "有",
@@ -962,7 +1073,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "have"
+        "english": "have",
+        "lesson": 5
     },
     {
         "character": "看",
@@ -970,7 +1082,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "look"
+        "english": "look",
+        "lesson": 7
     },
     {
         "character": "听",
@@ -978,7 +1091,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "listen"
+        "english": "listen",
+        "lesson": 15
     },
     {
         "character": "说",
@@ -987,7 +1101,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "speak"
+        "english": "speak",
+        "lesson": 6
     },
     {
         "character": "读",
@@ -995,7 +1110,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "read"
+        "english": "read",
+        "lesson": 6
     },
     {
         "character": "写",
@@ -1003,7 +1119,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "write"
+        "english": "write",
+        "lesson": 6
     },
     {
         "character": "看见",
@@ -1011,7 +1128,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "see"
+        "english": "see",
+        "lesson": 14
     },
     {
         "character": "叫",
@@ -1021,7 +1139,8 @@
             "Preposition",
             "Noun"
         ],
-        "english": "call"
+        "english": "call",
+        "lesson": 3
     },
     {
         "character": "来",
@@ -1033,7 +1152,8 @@
             "Numeral",
             "Particle"
         ],
-        "english": "come"
+        "english": "come",
+        "lesson": 12
     },
     {
         "character": "回",
@@ -1042,7 +1162,8 @@
             "Verb",
             "Measure word"
         ],
-        "english": "return"
+        "english": "return",
+        "lesson": 11
     },
     {
         "character": "去",
@@ -1050,7 +1171,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "go"
+        "english": "go",
+        "lesson": 7
     },
     {
         "character": "吃",
@@ -1058,7 +1180,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "eat"
+        "english": "eat",
+        "lesson": 8
     },
     {
         "character": "喝",
@@ -1067,7 +1190,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "drink"
+        "english": "drink",
+        "lesson": 8
     },
     {
         "character": "睡觉",
@@ -1075,7 +1199,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "sleep"
+        "english": "sleep",
+        "lesson": 13
     },
     {
         "character": "打电话",
@@ -1083,7 +1208,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "make phone call"
+        "english": "make phone call",
+        "lesson": 13
     },
     {
         "character": "做",
@@ -1091,7 +1217,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "do"
+        "english": "do",
+        "lesson": 6
     },
     {
         "character": "买",
@@ -1099,7 +1226,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "buy"
+        "english": "buy",
+        "lesson": 8
     },
     {
         "character": "开",
@@ -1108,7 +1236,8 @@
             "Verb",
             "Measure word"
         ],
-        "english": "open"
+        "english": "open",
+        "lesson": 14
     },
     {
         "character": "坐",
@@ -1116,7 +1245,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "sit"
+        "english": "sit",
+        "lesson": 10
     },
     {
         "character": "住",
@@ -1124,7 +1254,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "live"
+        "english": "live",
+        "lesson": 11
     },
     {
         "character": "学习",
@@ -1133,7 +1264,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "study"
+        "english": "study",
+        "lesson": 13
     },
     {
         "character": "工作",
@@ -1142,7 +1274,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "work"
+        "english": "work",
+        "lesson": 9
     },
     {
         "character": "下雨",
@@ -1150,7 +1283,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "rain"
+        "english": "rain",
+        "lesson": 12
     },
     {
         "character": "爱",
@@ -1159,7 +1293,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "love"
+        "english": "love",
+        "lesson": 12
     },
     {
         "character": "喜欢",
@@ -1168,7 +1303,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "love, like"
+        "english": "love, like",
+        "lesson": 13
     },
     {
         "character": "想",
@@ -1176,7 +1312,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "want"
+        "english": "want",
+        "lesson": 8
     },
     {
         "character": "认识",
@@ -1185,7 +1322,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "know"
+        "english": "know",
+        "lesson": 15
     },
     {
         "character": "会",
@@ -1194,7 +1332,8 @@
             "Verb",
             "Noun"
         ],
-        "english": "can"
+        "english": "can",
+        "lesson": 6
     },
     {
         "character": "能",
@@ -1202,7 +1341,8 @@
         "pos": [
             "Verb"
         ],
-        "english": "can, be able to"
+        "english": "can, be able to",
+        "lesson": 10
     },
     {
         "character": "好",
@@ -1212,7 +1352,8 @@
             "Adverb",
             "Verb"
         ],
-        "english": "good"
+        "english": "good",
+        "lesson": 1
     },
     {
         "character": "大",
@@ -1222,7 +1363,8 @@
             "Adverb",
             "Noun"
         ],
-        "english": "big"
+        "english": "big",
+        "lesson": 5
     },
     {
         "character": "小",
@@ -1231,7 +1373,8 @@
             "Adjective",
             "Adverb"
         ],
-        "english": "small"
+        "english": "small",
+        "lesson": 9
     },
     {
         "character": "多",
@@ -1242,7 +1385,8 @@
             "Adverb",
             "Verb"
         ],
-        "english": "many, much"
+        "english": "many, much",
+        "lesson": 5
     },
     {
         "character": "少",
@@ -1252,7 +1396,8 @@
             "Adverb",
             "Verb"
         ],
-        "english": "few, little"
+        "english": "few, little",
+        "lesson": 14
     },
     {
         "character": "冷",
@@ -1261,7 +1406,8 @@
             "Adjective",
             "Adverb"
         ],
-        "english": "cold"
+        "english": "cold",
+        "lesson": 12
     },
     {
         "character": "热",
@@ -1272,7 +1418,8 @@
             "Verb",
             "Adverb"
         ],
-        "english": "hot"
+        "english": "hot",
+        "lesson": 12
     },
     {
         "character": "高兴",
@@ -1281,7 +1428,8 @@
             "Adjective",
             "Noun"
         ],
-        "english": "happy"
+        "english": "happy",
+        "lesson": 15
     },
     {
         "character": "漂亮",
@@ -1289,6 +1437,7 @@
         "pos": [
             "Adjective"
         ],
-        "english": "beautiful"
+        "english": "beautiful",
+        "lesson": 14
     }
 ]

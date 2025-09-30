@@ -16,4 +16,7 @@ public class Word
 
     [JsonPropertyName("english")]
     public required string English { get; set; }
+
+    [JsonPropertyName("lesson")]
+    public int? Lesson { get; set; }
 }
