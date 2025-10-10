@@ -1,30 +1,34 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
+using System.Reactive;
 using System.Runtime.CompilerServices;
+using ReactiveUI;
 using WordWheel.Models;
 using WordWheel.Services;
 
 namespace WordWheel.ViewModels;
 
-public class StudyViewModel : INotifyPropertyChanged
+public class StudyViewModel : ReactiveObject
 {
     private readonly WordDataManager _wordDataManager;
+
     private ObservableCollection<RandomizedWord> _currentWords = [];
     private bool _hideEnglish;
     private bool _hidePinyin;
     private bool _hidePos;
-    private string _selectedBook = "";
     private bool _wordRepeats;
+    private string _selectedBook = "";
 
 
     public StudyViewModel(WordDataManager wordDataManager)
     {
         _wordDataManager = wordDataManager;
+
+        RandomizeCommand = ReactiveCommand.Create(RandomizeWords);
     }
+
+    public ReactiveCommand<Unit, Unit> RandomizeCommand { get; }
 
     public List<string> AvailableBooks { get; } =
     [
@@ -34,88 +38,44 @@ public class StudyViewModel : INotifyPropertyChanged
     public ObservableCollection<RandomizedWord> CurrentWords
     {
         get => _currentWords;
-        set
-        {
-            if (_currentWords != value)
-            {
-                _currentWords = value;
-                OnPropertyChanged(nameof(CurrentWords));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _currentWords, value);
     }
 
     public bool HideEnglish
     {
         get => _hideEnglish;
-        set
-        {
-            if (_hideEnglish != value)
-            {
-                _hideEnglish = value;
-                OnPropertyChanged(nameof(HideEnglish));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _hideEnglish, value);
     }
 
     public bool HidePinyin
     {
         get => _hidePinyin;
-        set
-        {
-            if (_hidePinyin != value)
-            {
-                _hidePinyin = value;
-                OnPropertyChanged(nameof(HidePinyin));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _hidePinyin, value);
     }
 
     public bool HidePos
     {
         get => _hidePos;
-        set
-        {
-            if (_hidePos != value)
-            {
-                _hidePos = value;
-                OnPropertyChanged(nameof(HidePos));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _hidePos, value);
     }
 
     public bool WordRepeats
     {
         get => _wordRepeats;
-        set
-        {
-            if (_wordRepeats != value)
-            {
-                _wordRepeats = value;
-                OnPropertyChanged(nameof(WordRepeats));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _wordRepeats, value);
     }
 
     public string SelectedBook
     {
         get => _selectedBook;
-        set
-        {
-            if (_selectedBook != value)
-            {
-                _selectedBook = value;
-                OnPropertyChanged(nameof(SelectedBook));
-            }
-        }
+        set => this.RaiseAndSetIfChanged(ref _selectedBook, value);
     }
 
     public void RandomizeWords()
     {
-        var bookName = SelectedBook + ".json";
-
         var filter = new WordFilter
         {
-            Books = [bookName],
+            Books = [$"{SelectedBook}.json"],
             PosCounts = new Dictionary<string, int>
             {
                 { "Verb", 1 },
@@ -128,13 +88,6 @@ public class StudyViewModel : INotifyPropertyChanged
         var randomizedWords = _wordDataManager.GetRandomWords(filter);
 
         CurrentWords = new ObservableCollection<RandomizedWord>(randomizedWords);
-    }
-
-    public event PropertyChangedEventHandler? PropertyChanged;
-
-    protected void OnPropertyChanged([CallerMemberName] string? propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
 

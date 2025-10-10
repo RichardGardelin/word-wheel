@@ -19,12 +19,4 @@ public partial class StudyView : UserControl
 
         DataContext = new StudyViewModel(_wordDataManager);
     }
-
-    private void RandomizeButton_Click(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is StudyViewModel vm)
-        {
-            vm.RandomizeWords();
-        }
-    }
 }

@@ -6,186 +6,168 @@
              x:Class="WordWheel.Views.StudyView"
              x:Name="Root"
              x:DataType="vm:StudyViewModel"
-             d:DesignWidth="1280" d:DesignHeight="832"
+             d:DesignWidth="1280"
+             d:DesignHeight="832"
              Background="#453A31">
-
-  <DockPanel LastChildFill="True">
-
-    <!-- Header -->
-    <Border DockPanel.Dock="Top" Background="#7A6945" Padding="10">
-      <Grid>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-          <ColumnDefinition Width="*" />
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-
-        <Button Name="ProfileButton"
-                Content="Profiles &#38; Settings"
-                Width="180"
-                Height="32"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Center" />
-
-        <TextBlock Text="Word Wheel"
-                   Grid.Column="1"
-                   FontSize="24"
-                   Foreground="Black"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center" />
-
-        <!-- Placeholder for spacing -->
-        <Rectangle Grid.Column="2"
-                   Width="{Binding Width, ElementName=ProfileButton}"
-                   Height="0"
-                   Opacity="0"
-                   IsHitTestVisible="False" />
-      </Grid>
-    </Border>
-
-    <!-- Filter Box -->
-    <Border DockPanel.Dock="Bottom"
-            Background="#7A6945"
-            Padding="20"
-            CornerRadius="10"
-            Margin="20,10"
-            Height="230"
-            HorizontalAlignment="Stretch">
-
-      <StackPanel HorizontalAlignment="Center" Spacing="15">
-
-        <!-- Book Selector -->
-        <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Center"
-                    Spacing="10">
-
-          <TextBlock Text="Select Book:" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold"/>
-          <ComboBox Name="BookSelector"
-                    Width="150"
-                    ItemsSource="{Binding AvailableBooks}"
-                    SelectedItem="{Binding SelectedBook, Mode=TwoWay}">
-          </ComboBox>
-
-        </StackPanel>
-
-        <!-- Checkboxes Row -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="40" Margin="0,20,0,0">
-
-          <CheckBox Name="HideEnglishCheckBox"
-                    Content="Hide English"
-                    Foreground="Black"
-                    IsChecked="{Binding HideEnglish, Mode=TwoWay}" />
-
-          <CheckBox Name="HidePinyinCheckBox"
-                    Content="Hide Pinyin"
-                    Foreground="Black"
-                    IsChecked="{Binding HidePinyin, Mode=TwoWay}" />
-
-          <CheckBox Name="HidePosCheckBox"
-                    Content="Hide POS"
-                    Foreground="Black"
-                    IsChecked="{Binding HidePos, Mode=TwoWay}" />
-
-          <CheckBox Content="Allow Repeats"
-                    Foreground="Black"
-                    IsChecked="{Binding WordRepeats, Mode=TwoWay}" />
-
-        </StackPanel>
-
-      </StackPanel>
-    </Border>
-
-    <!-- Main Content -->
-    <ScrollViewer Margin="0,20,0,0">
-      <StackPanel HorizontalAlignment="Center"
-                  MaxWidth="1000"
-                  Spacing="20">
-
-        <!-- Card Window -->
-        <Border Background="#CCC1AA"
-                CornerRadius="12"
-                Padding="20"
-                HorizontalAlignment="Stretch"
-                Width="940"
-                MinHeight="440">
-
-          <!-- Use ItemsControl bound to CurrentWords -->
-          <ItemsControl ItemsSource="{Binding CurrentWords}">
-            <ItemsControl.ItemsPanel>
-              <ItemsPanelTemplate>
-                <WrapPanel Orientation="Horizontal"/>
-              </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-
-            <ItemsControl.ItemTemplate>
-              <DataTemplate>
-                <Border Background="#7A6945"
-                        Width="280"
-                        Height="400"
-                        Margin="10"
-                        CornerRadius="8"
-                        Padding="10"
-                        BorderBrush="#555"
-                        BorderThickness="1">
-                  <DockPanel LastChildFill="True">
-
-                    <!-- POS TextBlock with visibility binding -->
-                    <TextBlock Text="{Binding PickedForPOS}"
-                               DockPanel.Dock="Bottom"
-                               FontSize="14"
-                               FontWeight="Bold"
-                               Foreground="Black"
-                               HorizontalAlignment="Center"
-                               Margin="0,10,0,0"
-                               IsVisible="{Binding DataContext.HidePos, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
-
-                    <StackPanel VerticalAlignment="Center"
-                                HorizontalAlignment="Center"
-                                Spacing="10">
-
-                      <TextBlock Text="{Binding Word.Character}"
-                                 FontSize="72"
-                                 FontWeight="Bold"
-                                 Foreground="Black"
-                                 HorizontalAlignment="Center" />
-
-                      <TextBlock Text="{Binding Word.Pinyin}"
-                                 FontSize="24"
-                                 Foreground="Black"
-                                 HorizontalAlignment="Center"
-                                 IsVisible="{Binding DataContext.HidePinyin, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
-
-                      <TextBlock Text="{Binding Word.English}"
-                                 FontSize="18"
-                                 Foreground="Black"
-                                 HorizontalAlignment="Center"
-                                 IsVisible="{Binding DataContext.HideEnglish, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
-
-                    </StackPanel>
-
-                  </DockPanel>
-                </Border>
-              </DataTemplate>
-            </ItemsControl.ItemTemplate>
-          </ItemsControl>
-
-        </Border>
-
-        <!-- Randomize Button -->
-        <Button Name="RandomizeButton"
-                Content="Randomize"
-                Click="RandomizeButton_Click"
-                Width="180"
-                Height="44"
-                HorizontalAlignment="Center"
+    <DockPanel LastChildFill="True">
+        <!-- ==================== HEADER ==================== -->
+        <Border DockPanel.Dock="Top"
                 Background="#7A6945"
-                Foreground="Black"
-                FontWeight="Bold"
-                FontSize="20"
-                VerticalContentAlignment="Center"
-                HorizontalContentAlignment="Center"/>
-      </StackPanel>
-    </ScrollViewer>
-
-  </DockPanel>
+                Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button Name="ProfileButton"
+                        Content="Profiles &amp; Settings"
+                        Width="180"
+                        Height="32"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center" />
+                <TextBlock Text="Word Wheel"
+                           Grid.Column="1"
+                           FontSize="24"
+                           Foreground="Black"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" />
+                <!-- Placeholder for spacing -->
+                <Rectangle Grid.Column="2"
+                           Width="{Binding Width, ElementName=ProfileButton}"
+                           Height="0"
+                           Opacity="0"
+                           IsHitTestVisible="False" />
+            </Grid>
+        </Border>
+        <!-- ==================== FILTER BOX ==================== -->
+        <Border DockPanel.Dock="Bottom"
+                Background="#7A6945"
+                Padding="20"
+                CornerRadius="10"
+                Margin="20,10"
+                Height="230"
+                HorizontalAlignment="Stretch">
+            <StackPanel HorizontalAlignment="Center"
+                        Spacing="15">
+                <!-- Book Selector -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Spacing="10">
+                    <TextBlock Text="Select Book:"
+                               VerticalAlignment="Center"
+                               Foreground="Black"
+                               FontWeight="Bold" />
+                    <ComboBox Name="BookSelector"
+                              Width="150"
+                              ItemsSource="{Binding AvailableBooks}"
+                              SelectedItem="{Binding SelectedBook, Mode=TwoWay}" />
+                </StackPanel>
+                <!-- Checkboxes Row -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Spacing="40"
+                            Margin="0,20,0,0">
+                    <CheckBox Name="HideEnglishCheckBox"
+                              Content="Hide English"
+                              Foreground="Black"
+                              IsChecked="{Binding HideEnglish, Mode=TwoWay}" />
+                    <CheckBox Name="HidePinyinCheckBox"
+                              Content="Hide Pinyin"
+                              Foreground="Black"
+                              IsChecked="{Binding HidePinyin, Mode=TwoWay}" />
+                    <CheckBox Name="HidePosCheckBox"
+                              Content="Hide POS"
+                              Foreground="Black"
+                              IsChecked="{Binding HidePos, Mode=TwoWay}" />
+                    <CheckBox Content="Allow Repeats"
+                              Foreground="Black"
+                              IsChecked="{Binding WordRepeats, Mode=TwoWay}" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <ScrollViewer Margin="0,20,0,0">
+            <StackPanel HorizontalAlignment="Center"
+                        MaxWidth="1000"
+                        Spacing="20">
+                <!-- ========== CARD WINDOW ========== -->
+                <Border Background="#CCC1AA"
+                        CornerRadius="12"
+                        Padding="20"
+                        HorizontalAlignment="Stretch"
+                        Width="940"
+                        MinHeight="440">
+                    <!-- Use ItemsControl bound to CurrentWords -->
+                    <ItemsControl ItemsSource="{Binding CurrentWords}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <!-- Single Card -->
+                                <Border Background="#7A6945"
+                                        Width="280"
+                                        Height="400"
+                                        Margin="10"
+                                        CornerRadius="8"
+                                        Padding="10"
+                                        BorderBrush="#555"
+                                        BorderThickness="1">
+                                    <Grid RowDefinitions="*,Auto">
+                                        <!-- Card Content -->
+                                        <Grid>
+                                            <StackPanel VerticalAlignment="Center"
+                                                        HorizontalAlignment="Center"
+                                                        Spacing="10">
+                                                <TextBlock Text="{Binding Word.Character}"
+                                                           FontSize="72"
+                                                           FontWeight="Bold"
+                                                           Foreground="Black"
+                                                           HorizontalAlignment="Center" />
+                                                <TextBlock Text="{Binding Word.Pinyin}"
+                                                           FontSize="24"
+                                                           Foreground="Black"
+                                                           HorizontalAlignment="Center"
+                                                           IsVisible="{Binding DataContext.HidePinyin, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
+                                                <TextBlock Text="{Binding Word.English}"
+                                                           FontSize="18"
+                                                           Foreground="Black"
+                                                           HorizontalAlignment="Center"
+                                                           IsVisible="{Binding DataContext.HideEnglish, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
+                                            </StackPanel>
+                                        </Grid>
+                                        <!-- POS text at bottom -->
+                                        <TextBlock Grid.Row="1"
+                                                   Text="{Binding PickedForPOS}"
+                                                   FontSize="14"
+                                                   FontWeight="Bold"
+                                                   Foreground="Black"
+                                                   HorizontalAlignment="Center"
+                                                   Margin="0,10,0,0"
+                                                   IsVisible="{Binding DataContext.HidePos, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Border>
+                <!-- ========== RANDOMIZE BUTTON ========== -->
+                <Button Name="RandomizeButton"
+                        Content="Randomize"
+                        Command="{Binding RandomizeCommand}"
+                        Width="180"
+                        Height="44"
+                        HorizontalAlignment="Center"
+                        Background="#7A6945"
+                        Foreground="Black"
+                        FontWeight="Bold"
+                        FontSize="20"
+                        VerticalContentAlignment="Center"
+                        HorizontalContentAlignment="Center" />
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
 </UserControl>
