@@ -1,8 +1,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
+using System.Linq;
 using System.Reactive;
-using System.Runtime.CompilerServices;
 using ReactiveUI;
 using WordWheel.Models;
 using WordWheel.Services;
@@ -19,26 +18,64 @@ public class StudyViewModel : ReactiveObject
     private bool _hidePos;
     private bool _wordRepeats;
     private string _selectedBook = "";
-
+    private string _posSelectionLabel = "Select POS (0 selected)";
+    private static readonly string[] AllPOSNames =
+    [
+        "Verb",
+        "Noun",
+        "Adjective",
+        "Adverb",
+        "Conjunction",
+        "Preposition",
+        "Pronoun",
+        "Measure word",
+        "Directional",
+        "Time word",
+        "Numeral",
+        "Location word",
+        "Fixed term",
+        "Particle",
+    ];
 
     public StudyViewModel(WordDataManager wordDataManager)
     {
         _wordDataManager = wordDataManager;
 
         RandomizeCommand = ReactiveCommand.Create(RandomizeWords);
+
+        IncreaseCountCommand = ReactiveCommand.Create<SelectablePOS>(pos => pos.Count++);
+        DecreaseCountCommand = ReactiveCommand.Create<SelectablePOS>(pos => pos.Count--);
+
+        PosOptions = new ObservableCollection<SelectablePOS>(
+            AllPOSNames.Select(name =>
+            {
+                var pos = new SelectablePOS(name) { OnSelectionChanged = UpdatePosSelectionLabel };
+                return pos;
+            })
+        );
+        UpdatePosSelectionLabel();
     }
+
+    public ReactiveCommand<SelectablePOS, Unit> IncreaseCountCommand { get; }
+
+    public ReactiveCommand<SelectablePOS, Unit> DecreaseCountCommand { get; }
 
     public ReactiveCommand<Unit, Unit> RandomizeCommand { get; }
 
-    public List<string> AvailableBooks { get; } =
-    [
-       "HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"
-    ];
+    public List<string> AvailableBooks { get; } = ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"];
+
+    public ObservableCollection<SelectablePOS> PosOptions { get; }
 
     public ObservableCollection<RandomizedWord> CurrentWords
     {
         get => _currentWords;
         set => this.RaiseAndSetIfChanged(ref _currentWords, value);
+    }
+
+    public string PosSelectionLabel
+    {
+        get => _posSelectionLabel;
+        set => this.RaiseAndSetIfChanged(ref _posSelectionLabel, value);
     }
 
     public bool HideEnglish
@@ -76,18 +113,18 @@ public class StudyViewModel : ReactiveObject
         var filter = new WordFilter
         {
             Books = [$"{SelectedBook}.json"],
-            PosCounts = new Dictionary<string, int>
-            {
-                { "Verb", 1 },
-                { "Noun", 1 },
-                { "Adjective", 1 }
-            },
-            WordRepeats = _wordRepeats
+            PosCounts = PosOptions.Where(p => p.IsSelected).ToDictionary(p => p.Name, p => p.Count),
+            WordRepeats = _wordRepeats,
         };
 
         var randomizedWords = _wordDataManager.GetRandomWords(filter);
 
         CurrentWords = new ObservableCollection<RandomizedWord>(randomizedWords);
     }
-}
 
+    private void UpdatePosSelectionLabel()
+    {
+        var selectedCount = PosOptions.Count(p => p.IsSelected);
+        PosSelectionLabel = $"Select POS ({selectedCount} selected)";
+    }
+}

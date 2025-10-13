@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -48,43 +49,155 @@
                 Margin="20,10"
                 Height="230"
                 HorizontalAlignment="Stretch">
-            <StackPanel HorizontalAlignment="Center"
-                        Spacing="15">
-                <!-- Book Selector -->
-                <StackPanel Orientation="Horizontal"
-                            HorizontalAlignment="Center"
+            <Grid ColumnDefinitions="*,Auto,*"
+                  HorizontalAlignment="Stretch"
+                  ColumnSpacing="40">
+                <!-- ========== LEFT COLUMN ========== -->
+                <StackPanel Grid.Column="0"
+                            Orientation="Vertical"
+                            VerticalAlignment="Top"
+                            Spacing="20">
+                    <!-- Book Selector -->
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="10">
+                        <TextBlock Text="Select Book:"
+                                   VerticalAlignment="Center"
+                                   Foreground="Black"
+                                   FontWeight="Bold" />
+                        <ComboBox Width="150"
+                                  Background="#CCC1AA"
+                                  ItemsSource="{Binding AvailableBooks}"
+                                  SelectedItem="{Binding SelectedBook, Mode=TwoWay}" />
+                    </StackPanel>
+                    <!-- POS Selector -->
+                    <StackPanel>
+                        <ToggleButton x:Name="PosToggle"
+                                      Content="{Binding PosSelectionLabel}"
+                                      Width="250"
+                                      Height="32"
+                                      Background="#CCC1AA"
+                                      BorderBrush="Black"
+                                      BorderThickness="1"
+                                      Padding="10,5"
+                                      FontWeight="Bold"
+                                      Foreground="Black"
+                                      HorizontalAlignment="Left"
+                                      HorizontalContentAlignment="Center"
+                                      Margin="0,0,0,5" />
+                        <Border Background="#CCC1AA"
+                                CornerRadius="6"
+                                Padding="5"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                Margin="0,5,0,0"
+                                IsVisible="{Binding IsChecked, ElementName=PosToggle}">
+                            <ScrollViewer MaxHeight="100">
+                                <ItemsControl ItemsSource="{Binding PosOptions}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal"
+                                                        Margin="4,2"
+                                                        VerticalAlignment="Center"
+                                                        Spacing="8">
+                                                <!-- Checkbox -->
+                                                <CheckBox IsChecked="{Binding IsSelected}"
+                                                          VerticalAlignment="Center" />
+                                                <!-- POS Name -->
+                                                <TextBlock Text="{Binding Name}"
+                                                           Foreground="Black"
+                                                           VerticalAlignment="Center"
+                                                           Margin="5,0,0,0"
+                                                           Width="120" />
+                                                <!-- Number Box -->
+                                                <Border Width="50"
+                                                        Height="28"
+                                                        Background="White"
+                                                        BorderBrush="Black"
+                                                        BorderThickness="1"
+                                                        CornerRadius="4"
+                                                        VerticalAlignment="Center"
+                                                        IsVisible="{Binding IsSelected}">
+                                                    <TextBlock Text="{Binding Count}"
+                                                               HorizontalAlignment="Center"
+                                                               VerticalAlignment="Center"
+                                                               FontWeight="Bold" />
+                                                </Border>
+                                                <!-- Arrow Buttons -->
+                                                <StackPanel Orientation="Horizontal"
+                                                            Margin="5,0,0,0"
+                                                            VerticalAlignment="Center"
+                                                            Spacing="4"
+                                                            IsVisible="{Binding IsSelected}">
+                                                    <!-- Up/Down Arrows -->
+                                                    <StackPanel Orientation="Vertical"
+                                                                Spacing="2">
+                                                        <!-- Up Arrow -->
+                                                        <Button Width="24"
+                                                                Height="14"
+                                                                Padding="0"
+                                                                Background="Transparent"
+                                                                BorderThickness="0"
+                                                                Command="{Binding DataContext.IncreaseCountCommand, ElementName=Root}"
+                                                                CommandParameter="{Binding}">
+                                                            <Path Fill="Black"
+                                                                  Stretch="Uniform"
+                                                                  HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center"
+                                                                  Data="M 0 10 L 12 0 L 24 10 Z" />
+                                                        </Button>
+                                                        <!-- Down Arrow -->
+                                                        <Button Width="24"
+                                                                Height="14"
+                                                                Padding="0"
+                                                                Background="Transparent"
+                                                                BorderThickness="0"
+                                                                Command="{Binding DataContext.DecreaseCountCommand, ElementName=Root}"
+                                                                CommandParameter="{Binding}">
+                                                            <Path Fill="Black"
+                                                                  Stretch="Uniform"
+                                                                  HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center"
+                                                                  Data="M 0 0 L 12 10 L 24 0 Z" />
+                                                        </Button>
+                                                    </StackPanel>
+                                                    <!-- Label -->
+                                                    <TextBlock Text="Amount"
+                                                               VerticalAlignment="Center"
+                                                               Foreground="Black"
+                                                               FontSize="14"
+                                                               FontWeight="Bold" />
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+                <!-- ========== MIDDLE COLUMN ========== -->
+                <Border Grid.Column="1"
+                        Width="60"
+                        Height="60"
+                        Background="Red"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Top" />
+                <!-- ========== RIGHT COLUMN ========== -->
+                <StackPanel Grid.Column="2"
+                            Orientation="Vertical"
+                            VerticalAlignment="Top"
+                            HorizontalAlignment="Right"
                             Spacing="10">
-                    <TextBlock Text="Select Book:"
-                               VerticalAlignment="Center"
-                               Foreground="Black"
-                               FontWeight="Bold" />
-                    <ComboBox Name="BookSelector"
-                              Width="150"
-                              ItemsSource="{Binding AvailableBooks}"
-                              SelectedItem="{Binding SelectedBook, Mode=TwoWay}" />
-                </StackPanel>
-                <!-- Checkboxes Row -->
-                <StackPanel Orientation="Horizontal"
-                            HorizontalAlignment="Center"
-                            Spacing="40"
-                            Margin="0,20,0,0">
-                    <CheckBox Name="HideEnglishCheckBox"
-                              Content="Hide English"
-                              Foreground="Black"
-                              IsChecked="{Binding HideEnglish, Mode=TwoWay}" />
-                    <CheckBox Name="HidePinyinCheckBox"
-                              Content="Hide Pinyin"
-                              Foreground="Black"
-                              IsChecked="{Binding HidePinyin, Mode=TwoWay}" />
-                    <CheckBox Name="HidePosCheckBox"
-                              Content="Hide POS"
-                              Foreground="Black"
-                              IsChecked="{Binding HidePos, Mode=TwoWay}" />
+                    <CheckBox Content="Hide English"
+                              IsChecked="{Binding HideEnglish}" />
+                    <CheckBox Content="Hide Pinyin"
+                              IsChecked="{Binding HidePinyin}" />
+                    <CheckBox Content="Hide POS"
+                              IsChecked="{Binding HidePos}" />
                     <CheckBox Content="Allow Repeats"
-                              Foreground="Black"
-                              IsChecked="{Binding WordRepeats, Mode=TwoWay}" />
+                              IsChecked="{Binding WordRepeats}" />
                 </StackPanel>
-            </StackPanel>
+            </Grid>
         </Border>
         <!-- ==================== MAIN CONTENT ==================== -->
         <ScrollViewer Margin="0,20,0,0">
