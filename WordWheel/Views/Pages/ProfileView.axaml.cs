@@ -1,8 +1,7 @@
-using Avalonia.Controls;
-using Avalonia.Interactivity;
 using System;
+using Avalonia.Controls;
 
-namespace WordWheel.Views;
+namespace WordWheel.Views.Pages;
 
 public partial class ProfileView : UserControl
 {

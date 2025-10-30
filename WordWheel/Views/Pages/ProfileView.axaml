@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             x:Class="WordWheel.Views.Pages.ProfileView"
+             d:DesignWidth="1280"
+             d:DesignHeight="832">
+    <StackPanel HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="20">
+        <TextBlock Text="Profiles &amp; Settings"
+                   FontSize="24"
+                   HorizontalAlignment="Center" />
+        <Button Name="StudyButton"
+                Content="Study"
+                Width="100"
+                Height="30" />
+    </StackPanel>
+</UserControl>

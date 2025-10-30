@@ -1,12 +1,9 @@
-using System;
-using System.Diagnostics;
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using WordWheel.Services;
-using WordWheel.ViewModels;
+using WordWheel.ViewModels.StudyView;
 
-namespace WordWheel.Views;
+namespace WordWheel.Views.Pages;
 
 public partial class StudyView : UserControl
 {

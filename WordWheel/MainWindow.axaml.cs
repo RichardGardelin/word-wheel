@@ -1,5 +1,5 @@
 using Avalonia.Controls;
-using WordWheel.Views;
+using WordWheel.Views.Pages;
 
 namespace WordWheel;
 

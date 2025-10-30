@@ -3,23 +3,23 @@ using ReactiveUI;
 
 namespace WordWheel.Models;
 
-public class SelectablePOS(string name) : ReactiveObject
+public class SelectablePOS : ReactiveObject
 {
     private bool _isSelected;
-    private int _count = 1;
+    private int _count;
 
-    public string Name { get; } = name;
+    public SelectablePOS(string name)
+    {
+        Name = name;
+        _count = 1;
+    }
 
-    public Action? OnSelectionChanged { get; set; }
+    public string Name { get; }
 
     public bool IsSelected
     {
         get => _isSelected;
-        set
-        {
-            this.RaiseAndSetIfChanged(ref _isSelected, value);
-            OnSelectionChanged?.Invoke();
-        }
+        set { this.RaiseAndSetIfChanged(ref _isSelected, value); }
     }
 
     public int Count
