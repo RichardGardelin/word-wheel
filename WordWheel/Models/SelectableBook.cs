@@ -9,7 +9,6 @@ public class SelectableBook : ReactiveObject
     private bool _isSelected;
     private bool _isLessonOverlayVisible;
     private string _name;
-    private string _lessonSummary = "";
     private ObservableCollection<SelectableLesson> _lessons;
 
     public SelectableBook(string name, int lessonCount)
@@ -24,11 +23,9 @@ public class SelectableBook : ReactiveObject
             lesson.PropertyChanged += (_, e) =>
             {
                 if (e.PropertyName == nameof(SelectableLesson.IsSelected))
-                    UpdateLessonSummary();
+                    this.RaisePropertyChanged(nameof(LessonSummary));
             };
         }
-
-        UpdateLessonSummary();
     }
 
     public string Name
@@ -57,8 +54,18 @@ public class SelectableBook : ReactiveObject
 
     public string LessonSummary
     {
-        get => _lessonSummary;
-        private set => this.RaiseAndSetIfChanged(ref _lessonSummary, value);
+        get
+        {
+            var selectedCount = Lessons.Count(l => l.IsSelected);
+
+            if (IsEntireBookSelected)
+                return "Entire book selected";
+
+            if (selectedCount == 0)
+                return "No lessons selected";
+
+            return $"{selectedCount} of {Lessons.Count} selected";
+        }
     }
 
     public void ToggleLessonOverlay()
@@ -70,27 +77,9 @@ public class SelectableBook : ReactiveObject
     {
         var newValue = !Lessons.All(l => l.IsSelected);
         foreach (var lesson in Lessons)
-        {
             lesson.IsSelected = newValue;
-        }
-
-        UpdateLessonSummary();
     }
 
-    private void UpdateLessonSummary()
-    {
-        var selectedCount = Lessons.Count(l => l.IsSelected);
-
-        if (selectedCount == Lessons.Count && Lessons.Count > 0)
-            LessonSummary = "Entire book selected";
-        else if (selectedCount == 0)
-        {
-            if (Name is "HSK 5" or "HSK 6")
-                LessonSummary = "Entire book selected";
-            else
-                LessonSummary = "No lessons selected";
-        }
-        else
-            LessonSummary = $"{selectedCount} of {Lessons.Count} selected";
-    }
+    public bool IsEntireBookSelected =>
+        (Lessons.Count > 0 && Lessons.All(l => l.IsSelected)) || Name is "HSK 5" or "HSK 6";
 }

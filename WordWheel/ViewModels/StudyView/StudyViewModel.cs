@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive;
@@ -74,7 +75,22 @@ public class StudyViewModel : BaseViewModel
     {
         var filter = new WordFilter
         {
-            Books = [$"{BookSelector.SelectedBook?.Name}.json"],
+            Books = [.. BookSelector.Books.Where(b => b.IsSelected).Select(b => b.Name)],
+            AllLessonsBooks =
+            [
+                .. BookSelector
+                    .Books.Where(b => b.IsSelected && b.IsEntireBookSelected)
+                    .Select(b => b.Name),
+            ],
+            Lessons = BookSelector
+                .Books.Where(b => b.IsSelected)
+                .ToDictionary(
+                    b => b.Name,
+                    b =>
+                        b.Lessons.Where(l => l.IsSelected)
+                            .Select(l => int.Parse(l.Name.Replace("Lesson ", string.Empty)))
+                            .ToHashSet()
+                ),
             PosCounts = PosSelector
                 .PosOptions.Where(p => p.IsSelected)
                 .ToDictionary(p => p.Name, p => p.Count),

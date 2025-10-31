@@ -15,7 +15,7 @@ public static class FilterService
 
         foreach (string book in filter.Books)
         {
-            if (!wordLists.TryGetValue(book, out var words))
+            if (!wordLists.TryGetValue(ToFileName(book), out var words))
                 continue;
 
             if (filter.AllLessonsBooks.Contains(book))
@@ -42,5 +42,11 @@ public static class FilterService
         }
 
         return filteredList;
+    }
+
+    private static string ToFileName(string name)
+    {
+        // Converts UI name into file data name
+        return $"{name.Replace(" ", string.Empty)}.json";
     }
 }
