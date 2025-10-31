@@ -8,22 +8,20 @@ public static class FilterUtils
 {
     public static bool FiltersAreEqual(WordFilter a, WordFilter b)
     {
-        if (a.WordRepeats != b.WordRepeats)
+        if (a is null || b is null)
             return false;
 
-        if (!a.Books.SequenceEqual(b.Books))
-            return false;
-
-        if (a.PosCounts.Count != b.PosCounts.Count)
-            return false;
-
-        foreach (var (pos, count) in a.PosCounts)
-        {
-            if (!b.PosCounts.TryGetValue(pos, out var otherCount) || otherCount != count)
-                return false;
-        }
-
-        return true;
+        return a.WordRepeats == b.WordRepeats
+            && a.Books.SetEquals(b.Books)
+            && a.AllLessonsBooks.SetEquals(b.AllLessonsBooks)
+            && a.Lessons.Count == b.Lessons.Count
+            && a.Lessons.All(kvp =>
+                b.Lessons.TryGetValue(kvp.Key, out var value) && value.SetEquals(kvp.Value)
+            )
+            && a.PosCounts.Count == b.PosCounts.Count
+            && a.PosCounts.All(kvp =>
+                b.PosCounts.TryGetValue(kvp.Key, out var value) && value == kvp.Value
+            );
     }
 
     public static WordFilter CloneFilter(WordFilter original)
@@ -32,7 +30,12 @@ public static class FilterUtils
         {
             WordRepeats = original.WordRepeats,
             Books = [.. original.Books],
-            PosCounts = new Dictionary<string, int>(original.PosCounts)
+            AllLessonsBooks = [.. original.AllLessonsBooks],
+            Lessons = original.Lessons.ToDictionary(
+                kvp => kvp.Key,
+                kvp => new HashSet<int>(kvp.Value)
+            ),
+            PosCounts = new Dictionary<string, int>(original.PosCounts),
         };
     }
 }
