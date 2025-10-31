@@ -24,7 +24,8 @@ public class WordDataManager
             _filteredCache.AddRange(FilterService.GetFilteredList(_wordLists, filter));
         }
 
-        return _randomizerService.PickWordsByPOS(_filteredCache, filter); ;
+        return _randomizerService.PickWordsByPOS(_filteredCache, filter);
+        ;
     }
 
     public void EnsureUserWordFilesExist()
@@ -41,9 +42,12 @@ public class WordDataManager
         {
             string targetPath = Path.Combine(userPath, Path.GetFileName(file));
 
-            if (!File.Exists(targetPath))
+            if (
+                !File.Exists(targetPath)
+                || File.GetLastWriteTimeUtc(file) > File.GetLastWriteTimeUtc(targetPath)
+            )
             {
-                File.Copy(file, targetPath);
+                File.Copy(file, targetPath, overwrite: true);
             }
         }
     }
