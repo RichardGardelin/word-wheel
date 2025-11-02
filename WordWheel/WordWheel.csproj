@@ -26,6 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
+      <AvaloniaResource Include="Assets/Fonts/**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Words\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

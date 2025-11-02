@@ -159,28 +159,29 @@
         <!-- ==================== MAIN CONTENT ==================== -->
         <ScrollViewer Margin="0,20,0,0">
             <StackPanel HorizontalAlignment="Center"
-                        MaxWidth="1000"
+                        MaxWidth="1050"
                         Spacing="20">
                 <!-- ========== CARD WINDOW ========== -->
                 <Border Background="#CCC1AA"
                         CornerRadius="12"
-                        Padding="20"
+                        Padding="10"
                         HorizontalAlignment="Stretch"
-                        Width="940"
-                        MinHeight="440">
+                        Width="1010"
+                        MinHeight="380">
                     <!-- Use ItemsControl bound to CurrentWords -->
                     <ItemsControl ItemsSource="{Binding CurrentWords}">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
-                                <WrapPanel Orientation="Horizontal" />
+                                <WrapPanel Orientation="Horizontal"
+                                           HorizontalAlignment="Center" />
                             </ItemsPanelTemplate>
                         </ItemsControl.ItemsPanel>
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <!-- Single Card -->
                                 <Border Background="#7A6945"
-                                        Width="280"
-                                        Height="400"
+                                        Width="310"
+                                        Height="360"
                                         Margin="10"
                                         CornerRadius="8"
                                         Padding="10"
@@ -194,15 +195,17 @@
                                                         Spacing="10">
                                                 <TextBlock Text="{Binding Word.Character}"
                                                            FontSize="72"
-                                                           FontWeight="Bold"
+                                                           FontFamily="avares://WordWheel/Assets/Fonts/KaiTi.ttf#KaiTi"
                                                            HorizontalAlignment="Center" />
                                                 <TextBlock Text="{Binding Word.Pinyin}"
-                                                           FontSize="24"
+                                                           FontSize="30"
                                                            HorizontalAlignment="Center"
                                                            IsVisible="{Binding DataContext.HidePinyin, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
                                                 <TextBlock Text="{Binding Word.English}"
                                                            FontSize="18"
                                                            HorizontalAlignment="Center"
+                                                           TextWrapping="Wrap"
+                                                           TextAlignment="Center"
                                                            IsVisible="{Binding DataContext.HideEnglish, ElementName=Root, Converter={StaticResource InverseBoolConverter}}" />
                                             </StackPanel>
                                         </Grid>
@@ -220,9 +223,9 @@
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </Border>
-                <!-- ========== RANDOMIZE BUTTON ========== -->
+                <!-- ========== DRAW BUTTON ========== -->
                 <Button Name="RandomizeButton"
-                        Content="Randomize"
+                        Content="Draw Words"
                         Command="{Binding RandomizeCommand}"
                         Width="180"
                         Height="44"
