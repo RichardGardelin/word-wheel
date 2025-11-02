@@ -38,7 +38,6 @@
                                             VerticalAlignment="Center">
                                     <CheckBox IsChecked="{Binding IsSelected}" />
                                     <TextBlock Text="{Binding Name}"
-                                               Foreground="Black"
                                                VerticalAlignment="Center"
                                                Width="55" />
                                     <Button Content="Lessons"
@@ -55,7 +54,6 @@
                                             VerticalContentAlignment="Center"
                                             Command="{Binding ToggleLessonOverlay}" />
                                     <TextBlock Text="{Binding LessonSummary}"
-                                               Foreground="Black"
                                                IsVisible="{Binding IsSelected}"
                                                VerticalAlignment="Center"
                                                FontSize="13" />
@@ -105,14 +103,13 @@
                                             Command="{Binding DataContext.ToggleAllLessonsCommand, ElementName=Root}"
                                             CommandParameter="{Binding .}" />
                                     <TextBlock Text="{Binding LessonSummary}"
-                                               Foreground="Black"
                                                IsVisible="{Binding IsSelected}"
                                                VerticalAlignment="Center"
                                                FontSize="13" />
                                 </StackPanel>
                                 <!-- Lesson list -->
                                 <ScrollViewer MaxHeight="135"
-                                MinHeight="135"
+                                              MinHeight="135"
                                               Margin="4,0">
                                     <ItemsControl ItemsSource="{Binding Lessons}">
                                         <ItemsControl.ItemTemplate>
