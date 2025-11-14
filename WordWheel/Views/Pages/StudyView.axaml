@@ -101,6 +101,41 @@
                                                        DataContext="{Binding RandomWordSelector}" />
                 </StackPanel>
                 <!-- ========= MIDDLE COLUMN ========= -->
+                <StackPanel Grid.Column="1"
+                            Orientation="Vertical"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Spacing="6">
+                    <Button Name="RandomizeButton"
+                            Content="Draw Words"
+                            Command="{Binding RandomizeCommand}"
+                            Width="180"
+                            Height="44"
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            Background="#ccc1aa"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Center"
+                            FontSize="20"
+                            VerticalContentAlignment="Center"
+                            HorizontalContentAlignment="Center" />
+                    <!-- ==== DRAW SUMMARY TEXT ==== -->
+                    <Border Background="#CCC1AA"
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            CornerRadius="4"
+                            Padding="6"
+                            Width="250"
+                            Height="140"
+                            HorizontalAlignment="Center">
+                        <TextBlock Text="{Binding AvailableWordsCount, StringFormat='Available words: {0}'}"
+                                   TextAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   FontWeight="Bold"
+                                   FontSize="12" />
+                    </Border>
+                </StackPanel>
                 <!-- ========= RIGHT COLUMN ========= -->
                 <StackPanel Grid.Column="2"
                             Orientation="Vertical"
@@ -227,18 +262,6 @@
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </Border>
-                <!-- ========== DRAW BUTTON ========== -->
-                <Button Name="RandomizeButton"
-                        Content="Draw Words"
-                        Command="{Binding RandomizeCommand}"
-                        Width="180"
-                        Height="44"
-                        HorizontalAlignment="Center"
-                        Background="#ccc1aa"
-                        FontWeight="Bold"
-                        FontSize="20"
-                        VerticalContentAlignment="Center"
-                        HorizontalContentAlignment="Center" />
             </StackPanel>
         </ScrollViewer>
     </DockPanel>

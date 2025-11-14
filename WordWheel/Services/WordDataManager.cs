@@ -68,6 +68,12 @@ public class WordDataManager
         }
     }
 
+    public int GetFilteredWordCount(WordFilter filter)
+    {
+        var filteredList = FilterService.GetFilteredList(_wordLists, filter);
+        return filteredList.Count;
+    }
+
     private static string GetUserWordFolderPath()
     {
         string userPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive;
@@ -17,6 +16,7 @@ public class StudyViewModel : BaseViewModel
     private bool _wordRepeats;
     private bool _isPosSelectorOpen;
     private bool _isBookSelectorOpen;
+    private int _availableWordsCount;
 
     public StudyViewModel(WordDataManager wordDataManager)
     {
@@ -27,6 +27,33 @@ public class StudyViewModel : BaseViewModel
         RandomWordSelector = new RandomWordSelectorViewModel();
 
         RandomizeCommand = ReactiveCommand.Create(RandomizeWords);
+
+        foreach (var book in BookSelector.Books)
+        {
+            book.PropertyChanged += (_, e) =>
+            {
+                if (e.PropertyName == nameof(SelectableBook.IsSelected))
+                    UpdateAvailableWordsCount();
+            };
+
+            foreach (var lesson in book.Lessons)
+            {
+                lesson.PropertyChanged += (_, e) =>
+                {
+                    if (e.PropertyName == nameof(SelectableLesson.IsSelected))
+                        UpdateAvailableWordsCount();
+                };
+            }
+        }
+
+        foreach (var pos in PosSelector.PosOptions)
+        {
+            pos.PropertyChanged += (_, e) =>
+            {
+                if (e.PropertyName == nameof(SelectablePOS.IsSelected))
+                    UpdateAvailableWordsCount();
+            };
+        }
     }
 
     public BookSelectorViewModel BookSelector { get; }
@@ -73,7 +100,29 @@ public class StudyViewModel : BaseViewModel
         set { this.RaiseAndSetIfChanged(ref _isBookSelectorOpen, value); }
     }
 
+    public int AvailableWordsCount
+    {
+        get => _availableWordsCount;
+        private set => this.RaiseAndSetIfChanged(ref _availableWordsCount, value);
+    }
+
     private void RandomizeWords()
+    {
+        var filter = BuildFilter();
+        var randomizedWords = _wordDataManager.GetRandomWords(filter);
+
+        CurrentWords.Clear();
+        foreach (var word in randomizedWords)
+            CurrentWords.Add(word);
+    }
+
+    private void UpdateAvailableWordsCount()
+    {
+        var filter = BuildFilter();
+        AvailableWordsCount = _wordDataManager.GetFilteredWordCount(filter);
+    }
+
+    private WordFilter BuildFilter()
     {
         var filter = new WordFilter
         {
@@ -93,31 +142,16 @@ public class StudyViewModel : BaseViewModel
                             .Select(l => int.Parse(l.Name.Replace("Lesson ", string.Empty)))
                             .ToHashSet()
                 ),
-            PosCounts = BuildPosCounts(PosSelector, RandomWordSelector),
+            PosCounts = PosSelector
+                .PosOptions.Where(p => p.IsSelected)
+                .ToDictionary(p => p.Name, p => p.Count),
             WordRepeats = WordRepeats,
         };
 
-        var randomizedWords = _wordDataManager.GetRandomWords(filter);
+        // Add Random if selected
+        if (RandomWordSelector.Count > 0)
+            filter.PosCounts["Random"] = RandomWordSelector.Count;
 
-        CurrentWords.Clear();
-        foreach (var word in randomizedWords)
-            CurrentWords.Add(word);
-    }
-
-    private static Dictionary<string, int> BuildPosCounts(
-        PosSelectorViewModel posSelector,
-        RandomWordSelectorViewModel randomWordSelector
-    )
-    {
-        var dict = posSelector
-            .PosOptions.Where(p => p.IsSelected)
-            .ToDictionary(p => p.Name, p => p.Count);
-
-        if (randomWordSelector.Count > 0)
-        {
-            dict["Random"] = randomWordSelector.Count;
-        }
-
-        return dict;
+        return filter;
     }
 }
