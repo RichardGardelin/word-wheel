@@ -93,9 +93,7 @@ public class StudyViewModel : BaseViewModel
                             .Select(l => int.Parse(l.Name.Replace("Lesson ", string.Empty)))
                             .ToHashSet()
                 ),
-            PosCounts = PosSelector
-                .PosOptions.Where(p => p.IsSelected)
-                .ToDictionary(p => p.Name, p => p.Count),
+            PosCounts = BuildPosCounts(PosSelector, RandomWordSelector),
             WordRepeats = WordRepeats,
         };
 
@@ -104,5 +102,22 @@ public class StudyViewModel : BaseViewModel
         CurrentWords.Clear();
         foreach (var word in randomizedWords)
             CurrentWords.Add(word);
+    }
+
+    private static Dictionary<string, int> BuildPosCounts(
+        PosSelectorViewModel posSelector,
+        RandomWordSelectorViewModel randomWordSelector
+    )
+    {
+        var dict = posSelector
+            .PosOptions.Where(p => p.IsSelected)
+            .ToDictionary(p => p.Name, p => p.Count);
+
+        if (randomWordSelector.Count > 0)
+        {
+            dict["Random"] = randomWordSelector.Count;
+        }
+
+        return dict;
     }
 }

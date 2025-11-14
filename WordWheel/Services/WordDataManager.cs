@@ -24,7 +24,7 @@ public class WordDataManager
             _filteredCache.AddRange(FilterService.GetFilteredList(_wordLists, filter));
         }
 
-        return _randomizerService.PickWordsByPOS(_filteredCache, filter);
+        return _randomizerService.PickWordsByFilter(_filteredCache, filter);
         ;
     }
 

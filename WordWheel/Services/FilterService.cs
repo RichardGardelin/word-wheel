@@ -32,8 +32,8 @@ public static class FilterService
             }
         }
 
-        // If no POS selected, return all words from selected books
-        if (filter.PosCounts.Count > 0)
+        // If no POS selected or no RandomWords, return all words from selected books
+        if (filter.PosCounts.Count > 0 && !filter.PosCounts.ContainsKey("Random"))
         {
             filteredList =
             [

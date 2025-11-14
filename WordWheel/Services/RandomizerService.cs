@@ -12,7 +12,7 @@ public class RandomizerService
     private readonly Dictionary<string, Queue<Word>> _shuffledCache = [];
     private WordFilter? _lastUsedFilter;
 
-    public List<RandomizedWord> PickWordsByPOS(List<Word> wordList, WordFilter filter)
+    public List<RandomizedWord> PickWordsByFilter(List<Word> filteredList, WordFilter filter)
     {
         if (_lastUsedFilter == null || !FilterUtils.FiltersAreEqual(_lastUsedFilter, filter))
         {
@@ -20,45 +20,54 @@ public class RandomizerService
             _lastUsedFilter = FilterUtils.CloneFilter(filter);
         }
 
-        var posLists = BuildPOSLists(wordList, filter.PosCounts);
+        var pools = BuildPools(filteredList, filter.PosCounts);
         var randomWords = new List<RandomizedWord>();
 
         if (filter.WordRepeats)
         {
-            randomWords.AddRange(PickWithRepeats(posLists, filter.PosCounts));
+            randomWords.AddRange(PickWithRepeats(pools, filter.PosCounts));
         }
         else
         {
-            randomWords.AddRange(PickWithoutRepeats(posLists, filter.PosCounts));
+            randomWords.AddRange(PickWithoutRepeats(pools, filter.PosCounts));
         }
 
         return randomWords;
     }
 
-    private static Dictionary<string, List<Word>> BuildPOSLists(
-        List<Word> wordList,
-        Dictionary<string, int> posCounts)
+    private static Dictionary<string, List<Word>> BuildPools(
+        List<Word> filteredList,
+        Dictionary<string, int> posCounts
+    )
     {
-        var posLists = new Dictionary<string, List<Word>>();
+        var pools = new Dictionary<string, List<Word>>();
 
-        foreach (string pos in posCounts.Keys)
+        foreach (string category in posCounts.Keys)
         {
-            posLists[pos] = [.. wordList.Where(word => word.Pos.Contains(pos))];
+            if (category == "Random")
+            {
+                pools[category] = [.. filteredList];
+            }
+            else
+            {
+                pools[category] = [.. filteredList.Where(word => word.Pos.Contains(category))];
+            }
         }
 
-        return posLists;
+        return pools;
     }
 
     private List<RandomizedWord> PickWithRepeats(
-        Dictionary<string, List<Word>> posLists,
-        Dictionary<string, int> posCounts)
+        Dictionary<string, List<Word>> pools,
+        Dictionary<string, int> posCounts
+    )
     {
         // Picks words randomly and tries to prevent duplicates within the same call
         var randomWords = new List<RandomizedWord>();
 
-        foreach (var (pos, count) in posCounts)
+        foreach (var (category, count) in posCounts)
         {
-            if (!posLists.TryGetValue(pos, out var pool) || pool.Count == 0)
+            if (!pools.TryGetValue(category, out var pool) || pool.Count == 0)
                 continue;
 
             var pickedForThisPOS = new HashSet<Word>();
@@ -74,51 +83,50 @@ public class RandomizerService
                 {
                     selectedWord = pool[_random.Next(pool.Count)];
                     attempts++;
-                }
-                while (pickedForThisPOS.Contains(selectedWord) && attempts < maxAttempts);
+                } while (pickedForThisPOS.Contains(selectedWord) && attempts < maxAttempts);
 
                 // If failed to get a unique word, just allow a duplicate
                 pickedForThisPOS.Add(selectedWord);
 
-                randomWords.Add(new RandomizedWord(selectedWord, pos));
+                randomWords.Add(new RandomizedWord(selectedWord, category));
             }
         }
         return randomWords;
     }
 
     private List<RandomizedWord> PickWithoutRepeats(
-        Dictionary<string, List<Word>> posLists,
+        Dictionary<string, List<Word>> pools,
         Dictionary<string, int> posCounts
-        )
+    )
     {
         var randomWords = new List<RandomizedWord>();
 
-        foreach (var (pos, count) in posCounts)
+        foreach (var (category, count) in posCounts)
         {
-            if (!posLists.TryGetValue(pos, out var sourceList) || sourceList.Count == 0)
+            if (!pools.TryGetValue(category, out var sourceList) || sourceList.Count == 0)
                 continue;
 
-            var queue = GetOrRefillQueue(pos, sourceList);
+            var queue = GetOrRefillQueue(category, sourceList);
 
             for (int i = 0; i < count; i++)
             {
                 if (queue.Count == 0)
-                    queue = GetOrRefillQueue(pos, sourceList);
+                    queue = GetOrRefillQueue(category, sourceList);
 
-                randomWords.Add(new RandomizedWord(queue.Dequeue(), pos));
+                randomWords.Add(new RandomizedWord(queue.Dequeue(), category));
             }
         }
 
         return randomWords;
     }
 
-    private Queue<Word> GetOrRefillQueue(string pos, List<Word> sourceList)
+    private Queue<Word> GetOrRefillQueue(string category, List<Word> sourceList)
     {
-        if (!_shuffledCache.TryGetValue(pos, out var queue) || queue.Count == 0)
+        if (!_shuffledCache.TryGetValue(category, out var queue) || queue.Count == 0)
         {
             ShuffleUtils.Shuffle(sourceList, _random);
             queue = new Queue<Word>(sourceList);
-            _shuffledCache[pos] = queue;
+            _shuffledCache[category] = queue;
         }
 
         return queue;
