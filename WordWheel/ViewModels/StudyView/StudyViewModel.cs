@@ -24,12 +24,14 @@ public class StudyViewModel : BaseViewModel
 
         BookSelector = new BookSelectorViewModel(() => IsBookSelectorOpen = false);
         PosSelector = new PosSelectorViewModel(() => IsPosSelectorOpen = false);
+        RandomWordSelector = new RandomWordSelectorViewModel();
 
         RandomizeCommand = ReactiveCommand.Create(RandomizeWords);
     }
 
     public BookSelectorViewModel BookSelector { get; }
     public PosSelectorViewModel PosSelector { get; }
+    public RandomWordSelectorViewModel RandomWordSelector { get; }
 
     public ObservableCollection<RandomizedWord> CurrentWords { get; } = new();
 

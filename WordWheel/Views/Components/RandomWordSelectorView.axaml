@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:WordWheel.ViewModels.StudyView"
+             x:Class="WordWheel.Views.Components.RandomWordSelectorView"
+             x:Name="Root"
+             x:DataType="vm:RandomWordSelectorViewModel">
+    <StackPanel Orientation="Horizontal"
+                Spacing="10">
+        <TextBlock Text="Random words to draw:"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontWeight="Bold" />
+        <Border Width="40"
+                Height="25"
+                Background="#ccc1aa"
+                BorderBrush="Black"
+                BorderThickness="1"
+                CornerRadius="4">
+            <TextBlock Text="{Binding Count}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontWeight="Bold" />
+        </Border>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    Spacing="1">
+            <Button Width="24"
+                    Height="14"
+                    Padding="0"
+                    Background="Transparent"
+                    Command="{Binding IncreaseCountCommand}">
+                <Path Fill="Black"
+                      Stretch="Uniform"
+                      VerticalAlignment="Bottom"
+                      Data="M 0 14 L 12 4 L 24 14 Z" />
+            </Button>
+            <Button Width="24"
+                    Height="14"
+                    Padding="0"
+                    Background="Transparent"
+                    Command="{Binding DecreaseCountCommand}">
+                <Path Fill="Black"
+                      Stretch="Uniform"
+                      VerticalAlignment="Top"
+                      Data="M 0 0 L 12 10 L 24 0 Z" />
+            </Button>
+        </StackPanel>
+        <TextBlock Text="Amount"
+                   VerticalAlignment="Center"
+                   FontSize="14"
+                   FontWeight="Bold" />
+    </StackPanel>
+</UserControl>

@@ -95,6 +95,10 @@
                                   HorizontalAlignment="Left"
                                   HorizontalContentAlignment="Center"
                                   IsChecked="{Binding IsPosSelectorOpen}" />
+                    <!-- ==== RANDOM WORD SELECTOR ==== -->
+                    <components:RandomWordSelectorView HorizontalAlignment="Left"
+                                                       VerticalAlignment="Top"
+                                                       DataContext="{Binding RandomWordSelector}" />
                 </StackPanel>
                 <!-- ========= MIDDLE COLUMN ========= -->
                 <!-- ========= RIGHT COLUMN ========= -->
