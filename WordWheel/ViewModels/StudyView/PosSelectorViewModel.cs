@@ -57,10 +57,30 @@ public class PosSelectorViewModel : BaseViewModel
 
     public ReactiveCommand<SelectablePOS, Unit> DecreaseCountCommand { get; }
 
+    public string SelectionSummary
+    {
+        get => ComputeSelectionSummary();
+    }
+
     public string PosSelectionLabel
     {
         get => _posSelectionLabel;
         set => this.RaiseAndSetIfChanged(ref _posSelectionLabel, value);
+    }
+
+    private string ComputeSelectionSummary()
+    {
+        var selected = PosOptions.Where(p => p.IsSelected).ToList();
+        if (selected.Count == 0)
+            return "No POS selected";
+
+        if (selected.Count < 4)
+        {
+            var names = selected.Select(p => p.Name);
+            return "Selected POS: " + string.Join(", ", names);
+        }
+
+        return $"{selected.Count} different POS selected";
     }
 
     private void UpdateLabel()

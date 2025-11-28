@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
+using System.Text;
 using ReactiveUI;
 using WordWheel.Models;
 
@@ -54,6 +55,11 @@ public class BookSelectorViewModel : BaseViewModel
 
     public ReactiveCommand<SelectableBook, Unit> ToggleAllLessonsCommand { get; }
 
+    public string SelectionSummary
+    {
+        get => ComputeSelectionSummary();
+    }
+
     public SelectableBook? SelectedBook
     {
         get => _selectedBook;
@@ -88,6 +94,34 @@ public class BookSelectorViewModel : BaseViewModel
         }
 
         AreAllLessonsSelected = newState;
+    }
+
+    private string ComputeSelectionSummary()
+    {
+        var selectedBooks = Books.Where(b => b.IsSelected).ToList();
+        if (selectedBooks.Count == 0)
+            return "No books selected";
+
+        if (selectedBooks.Count == 1)
+        {
+            var book = selectedBooks[0];
+            var selectedLessons = book.Lessons.Where(l => l.IsSelected).ToList();
+
+            if (selectedLessons.Count == book.Lessons.Count)
+                return $"Entire {book.Name} selected";
+
+            if (selectedLessons.Count == 1)
+                return $"{selectedLessons[0].Name} in {book.Name} selected";
+
+            return $"{selectedLessons.Count} lessons in {book.Name} selected";
+        }
+
+        int totalLessons = selectedBooks.Sum(b => b.Lessons.Count(l => l.IsSelected));
+
+        string bookWord = selectedBooks.Count == 1 ? "book" : "books";
+        string lessonWord = totalLessons == 1 ? "lesson" : "lessons";
+
+        return $"{selectedBooks.Count} {bookWord} with {totalLessons} {lessonWord} selected";
     }
 
     private void UpdateLabel()

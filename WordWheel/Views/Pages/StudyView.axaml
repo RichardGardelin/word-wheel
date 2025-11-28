@@ -128,12 +128,26 @@
                             Width="250"
                             Height="140"
                             HorizontalAlignment="Center">
-                        <TextBlock Text="{Binding AvailableWordsCount, StringFormat='Available words: {0}'}"
-                                   TextAlignment="Center"
-                                   HorizontalAlignment="Center"
-                                   TextWrapping="Wrap"
-                                   FontWeight="Bold"
-                                   FontSize="12" />
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="{Binding AvailableWordsCount, StringFormat='Available words: {0}'}"
+                                       TextAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       FontWeight="Bold"
+                                       FontSize="16" />
+                            <TextBlock Text="{Binding WordsToDraw, StringFormat='Word to draw: {0}'}"
+                                       TextAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       FontWeight="Bold"
+                                       FontSize="16" />
+                            <TextBlock Text="{Binding FullSelectionSummary}"
+                                       TextAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       TextWrapping="Wrap"
+                                       FontWeight="Bold"
+                                       FontSize="14" />
+                        </StackPanel>
                     </Border>
                 </StackPanel>
                 <!-- ========= RIGHT COLUMN ========= -->

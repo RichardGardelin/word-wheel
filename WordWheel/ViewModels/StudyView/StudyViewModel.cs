@@ -1,6 +1,7 @@
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reactive;
+using Avalonia;
 using ReactiveUI;
 using WordWheel.Models;
 using WordWheel.Services;
@@ -16,7 +17,9 @@ public class StudyViewModel : BaseViewModel
     private bool _wordRepeats;
     private bool _isPosSelectorOpen;
     private bool _isBookSelectorOpen;
+    private string _fullSelectionSummary = "";
     private int _availableWordsCount;
+    private int _wordsToDraw;
 
     public StudyViewModel(WordDataManager wordDataManager)
     {
@@ -33,7 +36,10 @@ public class StudyViewModel : BaseViewModel
             book.PropertyChanged += (_, e) =>
             {
                 if (e.PropertyName == nameof(SelectableBook.IsSelected))
+                {
                     UpdateAvailableWordsCount();
+                    BuildSummary();
+                }
             };
 
             foreach (var lesson in book.Lessons)
@@ -41,7 +47,10 @@ public class StudyViewModel : BaseViewModel
                 lesson.PropertyChanged += (_, e) =>
                 {
                     if (e.PropertyName == nameof(SelectableLesson.IsSelected))
+                    {
                         UpdateAvailableWordsCount();
+                        BuildSummary();
+                    }
                 };
             }
         }
@@ -51,13 +60,35 @@ public class StudyViewModel : BaseViewModel
             pos.PropertyChanged += (_, e) =>
             {
                 if (e.PropertyName == nameof(SelectablePOS.IsSelected))
+                {
                     UpdateAvailableWordsCount();
+                    UpdateWordsToDraw();
+                    BuildSummary();
+                }
+
+                if (e.PropertyName == nameof(SelectablePOS.Count))
+                {
+                    UpdateWordsToDraw();
+                }
             };
         }
+
+        RandomWordSelector.PropertyChanged += (_, e) =>
+        {
+            if (e.PropertyName == nameof(RandomWordSelector.Count))
+            {
+                BuildSummary();
+                UpdateWordsToDraw();
+            }
+        };
+
+        BuildSummary();
     }
 
     public BookSelectorViewModel BookSelector { get; }
+
     public PosSelectorViewModel PosSelector { get; }
+
     public RandomWordSelectorViewModel RandomWordSelector { get; }
 
     public ObservableCollection<RandomizedWord> CurrentWords { get; } = new();
@@ -106,6 +137,18 @@ public class StudyViewModel : BaseViewModel
         private set => this.RaiseAndSetIfChanged(ref _availableWordsCount, value);
     }
 
+    public int WordsToDraw
+    {
+        get => _wordsToDraw;
+        set => this.RaiseAndSetIfChanged(ref _wordsToDraw, value);
+    }
+
+    public string FullSelectionSummary
+    {
+        get => _fullSelectionSummary;
+        private set => this.RaiseAndSetIfChanged(ref _fullSelectionSummary, value);
+    }
+
     private void RandomizeWords()
     {
         var filter = BuildFilter();
@@ -120,6 +163,41 @@ public class StudyViewModel : BaseViewModel
     {
         var filter = BuildFilter();
         AvailableWordsCount = _wordDataManager.GetFilteredWordCount(filter);
+    }
+
+    private void UpdateWordsToDraw()
+    {
+        var totalPos = PosSelector.PosOptions.Where(p => p.IsSelected).Sum(p => p.Count);
+        WordsToDraw = RandomWordSelector.Count + totalPos;
+    }
+
+    private void BuildSummary()
+    {
+        var noBooksSelected = BookSelector.Books.All(b => !b.IsSelected);
+        var noPosSelected = PosSelector.PosOptions.All(p => !p.IsSelected);
+        int drawCount = RandomWordSelector.Count;
+
+        if (noBooksSelected)
+        {
+            FullSelectionSummary = "No books selected";
+            return;
+        }
+
+        if (drawCount == 0 && noPosSelected)
+        {
+            FullSelectionSummary = $"{BookSelector.SelectionSummary}\nSelect POS or random word";
+            return;
+        }
+
+        FullSelectionSummary = string.Join(
+            "\n",
+            new[]
+            {
+                BookSelector.SelectionSummary,
+                PosSelector.SelectionSummary,
+                $"Random words selected: {drawCount}",
+            }
+        );
     }
 
     private WordFilter BuildFilter()
