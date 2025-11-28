@@ -109,6 +109,7 @@
                     <Button Name="RandomizeButton"
                             Content="Draw Words"
                             Command="{Binding RandomizeCommand}"
+                            IsEnabled="{Binding CanDraw}"
                             Width="180"
                             Height="44"
                             BorderBrush="Black"

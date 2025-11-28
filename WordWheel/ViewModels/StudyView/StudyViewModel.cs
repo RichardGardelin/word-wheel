@@ -134,13 +134,21 @@ public class StudyViewModel : BaseViewModel
     public int AvailableWordsCount
     {
         get => _availableWordsCount;
-        private set => this.RaiseAndSetIfChanged(ref _availableWordsCount, value);
+        private set
+        {
+            this.RaiseAndSetIfChanged(ref _availableWordsCount, value);
+            this.RaisePropertyChanged(nameof(CanDraw));
+        }
     }
 
     public int WordsToDraw
     {
         get => _wordsToDraw;
-        set => this.RaiseAndSetIfChanged(ref _wordsToDraw, value);
+        private set
+        {
+            this.RaiseAndSetIfChanged(ref _wordsToDraw, value);
+            this.RaisePropertyChanged(nameof(CanDraw));
+        }
     }
 
     public string FullSelectionSummary
@@ -148,6 +156,8 @@ public class StudyViewModel : BaseViewModel
         get => _fullSelectionSummary;
         private set => this.RaiseAndSetIfChanged(ref _fullSelectionSummary, value);
     }
+
+    public bool CanDraw => WordsToDraw > 0 && AvailableWordsCount > 0;
 
     private void RandomizeWords()
     {
