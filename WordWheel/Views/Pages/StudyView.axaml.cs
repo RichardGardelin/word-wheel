@@ -15,5 +15,27 @@ public partial class StudyView : UserControl
         _wordDataManager = ((App)Application.Current!).DataManager;
 
         DataContext = new StudyViewModel(_wordDataManager);
+
+        if (DataContext is StudyViewModel vm)
+        {
+            vm.BookSelector.RequestClose += CloseBookSelector;
+            vm.PosSelector.RequestClose += ClosePosSelector;
+        }
+    }
+
+    private void CloseBookSelector()
+    {
+        if (BookSelectorButton.Flyout is Flyout flyout)
+        {
+            flyout.Hide();
+        }
+    }
+
+    private void ClosePosSelector()
+    {
+        if (PosSelectorButton.Flyout is Flyout flyout)
+        {
+            flyout.Hide();
+        }
     }
 }

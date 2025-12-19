@@ -25,7 +25,7 @@
                     VerticalAlignment="Center"
                     HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center"
-                    Command="{Binding DataContext.CloseCommand, ElementName=Root}" />
+                    Command="{Binding RequestCloseCommand}" />
             <!-- Books list -->
             <ScrollViewer Grid.Row="1"
                           MaxHeight="135">

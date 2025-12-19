@@ -70,31 +70,47 @@
                             VerticalAlignment="Top"
                             Spacing="10">
                     <!-- ==== BOOK SELECTOR BUTTON ==== -->
-                    <ToggleButton x:Name="BookToggle"
-                                  Content="{Binding DataContext.BookSelector.BookSelectionLabel, ElementName=Root}"
-                                  Width="250"
-                                  Height="32"
-                                  Background="#CCC1AA"
-                                  BorderBrush="Black"
-                                  BorderThickness="1"
-                                  Padding="10,5"
-                                  FontWeight="Bold"
-                                  HorizontalAlignment="Left"
-                                  HorizontalContentAlignment="Center"
-                                  IsChecked="{Binding IsBookSelectorOpen}" />
+                    <Button x:Name="BookSelectorButton"
+                            Content="{Binding DataContext.BookSelector.BookSelectionLabel, ElementName=Root}"
+                            Width="250"
+                            Height="32"
+                            Background="#CCC1AA"
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            Padding="10,5"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Left"
+                            HorizontalContentAlignment="Center">
+                        <Button.Flyout>
+                            <Flyout Placement="BottomEdgeAlignedLeft"
+                                    VerticalOffset="-32"
+                                    HorizontalOffset="-2"
+                                    FlyoutPresenterClasses="NoChrome">
+                                <components:BookSelectorView DataContext="{Binding DataContext.BookSelector, ElementName=Root}" />
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
                     <!-- ==== POS SELECTOR BUTTON ==== -->
-                    <ToggleButton x:Name="PosToggle"
-                                  Content="{Binding DataContext.PosSelector.PosSelectionLabel, ElementName=Root}"
-                                  Width="250"
-                                  Height="32"
-                                  Background="#CCC1AA"
-                                  BorderBrush="Black"
-                                  BorderThickness="1"
-                                  Padding="10,5"
-                                  FontWeight="Bold"
-                                  HorizontalAlignment="Left"
-                                  HorizontalContentAlignment="Center"
-                                  IsChecked="{Binding IsPosSelectorOpen}" />
+                    <Button x:Name="PosSelectorButton"
+                            Content="{Binding DataContext.PosSelector.PosSelectionLabel, ElementName=Root}"
+                            Width="250"
+                            Height="32"
+                            Background="#CCC1AA"
+                            BorderBrush="Black"
+                            BorderThickness="1"
+                            Padding="10,5"
+                            FontWeight="Bold"
+                            HorizontalAlignment="Left"
+                            HorizontalContentAlignment="Center">
+                        <Button.Flyout>
+                            <Flyout Placement="BottomEdgeAlignedLeft"
+                                    VerticalOffset="-74"
+                                    HorizontalOffset="-2"
+                                    FlyoutPresenterClasses="NoChrome">
+                                <components:PosSelectorView DataContext="{Binding DataContext.PosSelector, ElementName=Root}" />
+                            </Flyout>
+                        </Button.Flyout>
+                    </Button>
                     <!-- ==== RANDOM WORD SELECTOR ==== -->
                     <components:RandomWordSelectorView HorizontalAlignment="Left"
                                                        VerticalAlignment="Top"
@@ -198,16 +214,6 @@
                                   IsChecked="{Binding WordRepeats}" />
                     </Border>
                 </StackPanel>
-                <!-- ========= BOOK SELECTOR OVERLAY ========= -->
-                <components:BookSelectorView IsVisible="{Binding DataContext.IsBookSelectorOpen, ElementName=Root}"
-                                             DataContext="{Binding BookSelector}"
-                                             HorizontalAlignment="Left"
-                                             VerticalAlignment="Top" />
-                <!-- ========= POS SELECTOR OVERLAY ========= -->
-                <components:PosSelectorView IsVisible="{Binding DataContext.IsPosSelectorOpen, ElementName=Root}"
-                                            DataContext="{Binding PosSelector}"
-                                            HorizontalAlignment="Left"
-                                            VerticalAlignment="Top" />
             </Grid>
         </Border>
         <!-- ==================== MAIN CONTENT ==================== -->

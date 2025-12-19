@@ -15,8 +15,6 @@ public class StudyViewModel : BaseViewModel
     private bool _hidePinyin;
     private bool _hidePos;
     private bool _wordRepeats;
-    private bool _isPosSelectorOpen;
-    private bool _isBookSelectorOpen;
     private string _fullSelectionSummary = "";
     private int _availableWordsCount;
     private int _wordsToDraw;
@@ -25,8 +23,8 @@ public class StudyViewModel : BaseViewModel
     {
         _wordDataManager = wordDataManager;
 
-        BookSelector = new BookSelectorViewModel(() => IsBookSelectorOpen = false);
-        PosSelector = new PosSelectorViewModel(() => IsPosSelectorOpen = false);
+        BookSelector = new BookSelectorViewModel();
+        PosSelector = new PosSelectorViewModel();
         RandomWordSelector = new RandomWordSelectorViewModel();
 
         RandomizeCommand = ReactiveCommand.Create(RandomizeWords);
@@ -117,18 +115,6 @@ public class StudyViewModel : BaseViewModel
     {
         get => _wordRepeats;
         set => this.RaiseAndSetIfChanged(ref _wordRepeats, value);
-    }
-
-    public bool IsPosSelectorOpen
-    {
-        get => _isPosSelectorOpen;
-        set { this.RaiseAndSetIfChanged(ref _isPosSelectorOpen, value); }
-    }
-
-    public bool IsBookSelectorOpen
-    {
-        get => _isBookSelectorOpen;
-        set { this.RaiseAndSetIfChanged(ref _isBookSelectorOpen, value); }
     }
 
     public int AvailableWordsCount

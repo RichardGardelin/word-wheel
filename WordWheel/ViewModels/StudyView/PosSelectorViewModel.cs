@@ -28,9 +28,12 @@ public class PosSelectorViewModel : BaseViewModel
         "Particle",
     ];
 
-    public PosSelectorViewModel(Action closeAction)
+    public PosSelectorViewModel()
     {
-        InitializeClose(closeAction);
+        RequestCloseCommand = ReactiveCommand.Create(() =>
+        {
+            RequestClose?.Invoke();
+        });
 
         IncreaseCountCommand = ReactiveCommand.Create<SelectablePOS>(pos => pos.Count++);
         DecreaseCountCommand = ReactiveCommand.Create<SelectablePOS>(pos => pos.Count--);
@@ -56,6 +59,10 @@ public class PosSelectorViewModel : BaseViewModel
     public ReactiveCommand<SelectablePOS, Unit> IncreaseCountCommand { get; }
 
     public ReactiveCommand<SelectablePOS, Unit> DecreaseCountCommand { get; }
+
+    public event Action? RequestClose;
+
+    public ReactiveCommand<Unit, Unit> RequestCloseCommand { get; }
 
     public string SelectionSummary
     {

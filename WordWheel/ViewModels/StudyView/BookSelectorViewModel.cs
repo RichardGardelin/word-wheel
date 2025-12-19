@@ -13,12 +13,14 @@ public class BookSelectorViewModel : BaseViewModel
 {
     private string _bookSelectionLabel = "Select Books (0 selected)";
     private SelectableBook? _selectedBook;
-    private bool _isOverlayOpen;
     private bool _areAllLessonsSelected = true;
 
-    public BookSelectorViewModel(Action closeAction)
+    public BookSelectorViewModel()
     {
-        InitializeClose(closeAction);
+        RequestCloseCommand = ReactiveCommand.Create(() =>
+        {
+            RequestClose?.Invoke();
+        });
 
         ToggleAllLessonsCommand = ReactiveCommand.Create<SelectableBook>(book =>
         {
@@ -55,6 +57,10 @@ public class BookSelectorViewModel : BaseViewModel
 
     public ReactiveCommand<SelectableBook, Unit> ToggleAllLessonsCommand { get; }
 
+    public event Action? RequestClose;
+
+    public ReactiveCommand<Unit, Unit> RequestCloseCommand { get; }
+
     public string SelectionSummary
     {
         get => ComputeSelectionSummary();
@@ -70,12 +76,6 @@ public class BookSelectorViewModel : BaseViewModel
     {
         get => _bookSelectionLabel;
         set => this.RaiseAndSetIfChanged(ref _bookSelectionLabel, value);
-    }
-
-    public bool IsOverlayOpen
-    {
-        get => _isOverlayOpen;
-        set => this.RaiseAndSetIfChanged(ref _isOverlayOpen, value);
     }
 
     public bool AreAllLessonsSelected

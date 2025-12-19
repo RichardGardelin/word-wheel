@@ -24,7 +24,7 @@
                     VerticalAlignment="Center"
                     HorizontalContentAlignment="Center"
                     VerticalContentAlignment="Center"
-                    Command="{Binding DataContext.CloseCommand, ElementName=Root}" />
+                    Command="{Binding RequestCloseCommand}" />
             <ScrollViewer MaxHeight="135">
                 <ItemsControl ItemsSource="{Binding PosOptions}">
                     <ItemsControl.ItemTemplate>
